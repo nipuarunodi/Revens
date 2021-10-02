@@ -13,116 +13,93 @@
 	  
   </head>
   <body>
-	  <center><h1>Payment Management</h1></center>
-	  <form method="post" action="Payments.php">
-	<table width="100%" border="0">
-  <tbody>
-    <tr>
-      <td width="20%" height="37">Customer Name</td>
-      <td width="20%"><input type="text" id="txtCustomerName" name="txtCustomerName"></td>
-      <td rowspan="8" width="60%"><table width="100%" border="1">
-  <tbody>
-    <tr>
-      <th>Payment ID</th>
-      <th>Customer Name</th>
-      <th>Supplier Name</th>
-      <th>Amount</th>
-	  <th>&nbsp;</th>
-    </tr>
-	<?php
-	$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
-		if(!$con)
-		{
-			die("Cannot connect to the database server");
-		}
-	$sql = "SELECT * FROM payment";
-	$results = mysqli_query($con,$sql);
-	if(mysqli_num_rows($results)>0)
-	{
-		$income;
-		$expenses;
-		$total;
-		while($row = mysqli_fetch_assoc($results))
-			{
-				if(is_null($row['customerName']))
-				{
-
-				}
-				else
-				{
-					$income = $income + $row['amount'];
-				}
-		?>
-    <tr>
-      <td><?php echo $row['paymentId'];?></td>
-      <td><?php echo $row['customerName'];?></td>
-      <td><?php echo $row['supplierName'];?></td>
-      <td><?php echo $row['amount'];?></td>
-	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>">Edit</a>&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>">Delete</a></td>
-    </tr>
-	 <?php
-			}
-	}
-		mysqli_close($con);
-		?> 
-  </tbody>
-</table>
-</td>
-    </tr>
-    <tr>
-      <td>Supplier Name</td>
-      <td><input type="text" id="txtSupplierName" name="txtSupplierName"></td>
-    </tr>
-    <tr>
-      <td>Amount</td>
-      <td><input type="text" id="txtAmount" name="txtAmount"></td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td><input type="submit" name="btnsubmit" id="btnsubmit" value="Add">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
-    </tr>
-	  <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-	  <tr>
-      <td>Income</td>
-      <td><?php echo $income ?></td>
-    </tr>
-	  <tr>
-      <td>Expenses</td>
-      <td></td>
-    </tr>
-	  <tr>
-      <td>Total</td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-	  </form>
-	  <?php
 	  
-	if(isset($_POST["btnsubmit"]))
-	{
-		$customerName = $_POST["txtCustomerName"];
-		$supplierName = $_POST["txtSupplierName"];
-		$amount = $_POST["txtAmount"];
-		
-		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
-					if(!$con)
+	  <center><h1>Payment Management</h1></center><br>
+	  <center><table border="1" width="50%">
+			<tr>
+		  		<th width="33%">Income&nbsp;-</th>
+				<th width="33%">Expenses</th>
+				<th width="34%">=  Total Amount</th>
+		  	</tr>
+		    <tr>
+		  		<td><?php echo $income ?></td>
+				<td><?php echo $expenses ?></td>
+				<td><?php echo $income-$expenses ?></td>
+		  	</tr>
+		</table></center>
+	  <br>
+	  <center><a href="AddPayments.php">Add Another Payment</a></center>
+	  <br>
+	  <table border="0" width="100%">
+	  <tr>
+		<td width="50%">
+		<table border="1" width="99%">
+			<tr>
+			<th>Order ID</th>
+			<th>Customer ID</th>
+			<th>Amount</th>
+		    </tr>
+			<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT * FROM customerorder";
+				$results = mysqli_query($con,$sql);
+				if(mysqli_num_rows($results)>0)
+				{
+					while($row = mysqli_fetch_assoc($results))
 					{
-						die("Cannot connect to the database server");
+						$income = $income + $row['totalAmount'];
+			?>
+			<tr>
+			<td><?php echo $row['orderId'];?></td>
+			<td><?php echo $row['customerId'];?></td>
+		    <td><?php echo $row['totalAmount'];?></td>
+			</tr>
+			<?php
 					}
-					
-					$sql = "INSERT INTO payment (customerName,supplierName,amount) VALUES ('$customerName','$supplierName','$amount')";
-		
-					mysqli_query($con,$sql);
-		            
-					mysqli_close($con);
-		
-					echo "<script type='text/javascript'> document.location = 'Payments.php' </script>";
-	}
-?>
+				}
+			mysqli_close($con);
+			?>
+		</table>  
+		</td>
+		<td width="50%">
+		<table border="1" width="99%">
+		<tr>
+			<th>Order ID</th>
+			<th>Supplier ID</th>
+			<th>Amount</th>
+		</tr>
+		<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT * FROM supplierorder";
+				$results = mysqli_query($con,$sql);
+				if(mysqli_num_rows($results)>0)
+				{
+					while($row = mysqli_fetch_assoc($results))
+					{
+						$expenses = $expenses + $row['totalAmount'];
+			?>
+			<tr>
+			<td><?php echo $row['orderId'];?></td>
+			<td><?php echo $row['supplierId'];?></td>
+		    <td><?php echo $row['totalAmount'];?></td>
+			</tr>
+			<?php
+					}
+				}
+			mysqli_close($con);
+			?>
+		</table>
+		</td>
+	  </tr>
+	  </table>
 	  
   </body>
 </html>
