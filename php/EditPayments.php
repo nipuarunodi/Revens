@@ -35,12 +35,8 @@
 			<td><input type="number" id="txtPaymentId" name="txtPaymentId" value="<?php echo $row['paymentId'];?>"></td>
 		  </tr>
 		  <tr>
-		  <td>Customer Name</td>
-			<td><input type="text" id="txtCustomerName" name="txtCustomerName" value="<?php echo $row['customerName'];?>"></td>
-		  </tr>
-		  <tr>
-		  <td>Supplier Name</td>
-			<td><input type="text" id="txtSupplierName" name="txtSupplierName" value="<?php echo $row['supplierName'];?>"></td>
+		  <td>Payment Details</td>
+			<td><input type="text" id="txtPaymentDetails" name="txtPaymentDetails" value="<?php echo $row['paymentDetails'];?>"></td>
 		  </tr>
 		  <tr>
 		  <td>Amount</td>
@@ -60,8 +56,7 @@
 	<?php
 	if(isset($_POST["btnsubmit"]))
 	{
-		$customerName = $_POST["txtCustomerName"];
-		$supplierName = $_POST["txtSupplierName"];
+		$paymentDetails = $_POST["txtPaymentDetails"];
 		$amount = $_POST["txtAmount"];
 		
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -70,7 +65,7 @@
 						die("Cannot conect to the database server");
 					}
 					
-					$sql = "UPDATE payment SET customerName = '$customerName', supplierName = '$supplierName', amount = '$amount' WHERE paymentId  = '".$_GET['id']."'";
+					$sql = "UPDATE payment SET paymentDetails = '$paymentDetails', amount = '$amount' WHERE paymentId  = '".$_GET['id']."'";
 		
 					mysqli_query($con,$sql);
 		            
@@ -78,7 +73,7 @@
 					
 					echo '<script>alert("Successfully Updated!")</script>';
 		
-		            echo "<script type='text/javascript'> document.location = 'Payments.php'; </script>";
+		            echo "<script type='text/javascript'> document.location = 'AddPayments.php'; </script>";
 					
 	}
 ?>
