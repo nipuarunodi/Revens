@@ -1,3 +1,10 @@
+<?php session_start();
+
+if(!isset($_SESSION["id"]))
+{
+	header('Location:customerLogin.php');
+}
+?>
 <!doctype html>
 <html>
 <head>
@@ -55,7 +62,7 @@
                                     
                                     $date = date("Y-m-d H:i:s");
                                     
-                                    $sql ="INSERT INTO `customerorder` (`customerId`, `prescriptionImagePath`, `orderDetails`, `deliveryType`, `orderStatus`,`orderDate`,`totalAmount`) VALUES (1, '".$imagePath."', '".$drugDetails."', '".$type."', 'Pending','".$date."',0)";
+                                    $sql ="INSERT INTO `customerorder` (`customerId`, `prescriptionImagePath`, `orderDetails`, `deliveryType`, `orderStatus`,`orderDate`,`totalAmount`) VALUES ('".$_SESSION["id"]."', '".$imagePath."', '".$drugDetails."', '".$type."', 'Pending','".$date."',0)";
                                     
                                     if(mysqli_query($con,$sql))
                                     {
