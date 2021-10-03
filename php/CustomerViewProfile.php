@@ -15,6 +15,7 @@ if(!isset($_SESSION["id"]))
 
 <body>
 	<h1 align="center">My Profile</h1>
+	<br>
 	 <table border="0" align="center">
 
 		<?php
@@ -51,6 +52,7 @@ if(!isset($_SESSION["id"]))
 		 }
 		 ?>
 		</table>
+	<br>
 	<center>
 	<a href="AddOrder.php?id=<?php echo $row['customerId']; ?>">Add order</a>
 	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>">View Order History</a>
