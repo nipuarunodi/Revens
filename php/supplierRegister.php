@@ -88,7 +88,7 @@
 			mysqli_query($con,$sql);
 
 			mysqli_close($con);
-			header('Location:login.php');
+			header('Location:supplierLogin.php');
 		}
 			
 		?>
