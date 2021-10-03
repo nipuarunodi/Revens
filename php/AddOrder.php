@@ -68,6 +68,8 @@ if(!isset($_SESSION["id"]))
                                     if(mysqli_query($con,$sql))
                                     {
                                         echo "<script type='text/javascript'>alert('Order Added Successfully');</script>";
+										
+										echo "<script type='text/javascript'> document.location = 'CustomerViewProfile.php'; </script>";
                                     }
                                     else
                                     {
