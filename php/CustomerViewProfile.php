@@ -51,8 +51,10 @@ if(!isset($_SESSION["id"]))
 		 }
 		 ?>
 		</table>
-	<a href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>">View Order History</a>
-	<a href="update.php?id=<?php echo $row['customerId']; ?>">Edit User Details</a>
-	
+	<center>
+	<a href="AddOrder.php?id=<?php echo $row['customerId']; ?>">Add order</a>
+	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>">View Order History</a>
+	<a  href="EditCustomer.php?id=<?php echo $row['customerId']; ?>">Edit User Details</a>
+	</center>
 </body>
 </html>
