@@ -17,7 +17,7 @@ if(!isset($_SESSION["id"]))
             <tr>
                 <td>&nbsp;</td>
                 <td colspan="2">
-                    <form action="add.php" method="post" enctype="multipart/form-data">
+                    <form action="AddOrder.php" method="post" enctype="multipart/form-data">
                     <table class="loginTable" style="padding: 20px" width="508" align="left">
                     <tr>
                         <td height="59" colspan="2" bgcolor="#FFFFFF">
