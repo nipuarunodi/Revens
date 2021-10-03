@@ -95,7 +95,7 @@
 			
 		?>
 
-     <script>
+     <script type="text/javascript">
 
 		function validateUserName()
 		{
@@ -134,7 +134,7 @@
 			 var pwd=document.getElementById("txtPassword").value;
 			 var cpwd=document.getElementById("txtConfirm_Password").value;
 
-			 if((pwd == "")|| (pwd == null)|| (pwd!= cpwd))
+			 if((pwd == " ")|| (pwd == null)|| (pwd!= cpwd))
 			 {
 				 alert("Please enter correct password and matching confirm password");
 				 return false;
@@ -148,7 +148,7 @@
 		{
 			var address = document.getElementById("txtCompany").value;
 
-			if(address == "" || address == null)
+			if(address == " " || address == null)
 				{
 					alert("Please Enter the Company Name");
 					return false;
@@ -177,7 +177,7 @@
 
 		function validateAll()
 		{
-			  if(validateUserName() && validateEmail() && validatePassword() && validateCompany() && validateContact() && validateContactNum())
+			  if(validateUserName() && validateEmail() && validatePassword() && validateCompany() && validateContactNum())
 			 {
 			   alert("Successfully Registerd");
 			 }
