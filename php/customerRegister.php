@@ -58,7 +58,7 @@
         
 
             <div class="input-group">
-                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()/">
+                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
             </div>
 	   </form>
     </div>
@@ -96,7 +96,7 @@
 
 
 
-	<script>
+	<script type="text/javascript">
 
 		function validateUserName()
 		{
@@ -135,7 +135,7 @@
 			 var pwd=document.getElementById("txtPassword").value;
 			 var cpwd=document.getElementById("txtConfirm_Password").value;
 
-			 if((pwd == "")|| (pwd == null)|| (pwd!= cpwd))
+			 if((pwd == " ")|| (pwd == null)|| (pwd!= cpwd))
 			 {
 				 alert("Please enter correct password and matching confirm password");
 				 return false;
@@ -149,7 +149,7 @@
 		{
 			var address = document.getElementById("txtAddress").value;
 
-			if(address == "" || address == null)
+			if(address == " " || address == null)
 				{
 					alert("Please Enter the address");
 					return false;
@@ -178,7 +178,7 @@
 
 		function validateAll()
 		{
-			  if(validateUserName() && validateEmail() && validatePassword() && validateAddress() && validateContact() && validateContactNum())
+			  if(validateUserName() && validateEmail() && validatePassword() && validateAddress()  && validateContactNum())
 			 {
 			   alert("Successfully Registerd");
 			 }
