@@ -13,7 +13,7 @@
             <div class="input-group">
                 <p>
                   <label class="input-label">Email</label>
-                  <input class="input-text" type="text" id="txtSignInUsername" name="email" placeholder="Enter username..." required>
+                  <input class="input-text" type="text" id="txtSignInUsername" name="email" placeholder="Enter Email..." required>
                 </p>
             </div>
             <div class="input-group">
