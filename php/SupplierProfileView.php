@@ -34,7 +34,7 @@ if(!isset($_SESSION["id"]))
 		 </tr>
 		 <tr>
 		   <td>Supplier Name</td>
-			 <td> <?php echo $row['supplier Name'];?></td>
+			 <td> <?php echo $row['supplierName'];?></td>
 		 </tr>
 		 <tr>
 		   <td>Email</td>
