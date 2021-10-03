@@ -13,15 +13,15 @@
       <td height="61" colspan="2"align="center"><h1>Supplier Orders</h1></td>
     </tr>
     <tr>
-      <td><h2>supplierId</h2></td>
+      <td><h2>Supplier Id</h2></td>
       <td><input name="txtSupplierId" type="text" required="required" id="txtSupplierId" value="<?php echo $_GET['id'];?>"></td>
     </tr>
 	  <tr>
-      <td><h2>orderDetails</h2></td>
+      <td><h2>Order Details</h2></td>
       <td><textarea name="textarea" required="required" id="textarea"></textarea></td>
     </tr>
 	  <tr>
-      <td><h2>orderStatus</h2></td>
+      <td><h2>Order Status</h2></td>
       <td><input name="txtOrderStatus" type="text" required="required" id="txtOrderStatus" value="Pending"></td>
     </tr>
 	  
@@ -46,10 +46,10 @@
 		</tr>
 		
 		<tr>
-			<th>orderId</th>
-			<th>supplierId</th>
-			<th>orderDetails</th>
-			<th>orderStatus</th>
+			<th>Order Id</th>
+			<th>Supplier Id</th>
+			<th>Order Details</th>
+			<th>Order Status</th>
 			
 			
 		</tr>
@@ -93,6 +93,7 @@
 				$supplierId = $_POST["txtSupplierId"];
 				$orderDetails =  $_POST["textarea"];
 				$orderStatus =  $_POST["txtOrderStatus"];
+				$date = date("Y-m-d H:i:s");
 				
 				
 	$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -100,7 +101,7 @@
 				{	
 						die("Sorry, We are facing a technical issue");		
 				}	
-		$sql = "INSERT INTO `supplierorder` (`supplierId`,`orderDetails`,`orderStatus`) VALUES ('".$supplierId."','".$orderDetails."','".$orderStatus."')";
+		$sql = "INSERT INTO `supplierorder` (`supplierId`,`orderDetails`,`orderStatus`,`orderDate`) VALUES ('".$supplierId."','".$orderDetails."','".$orderStatus."','".$date."')";
 				$results = mysqli_query($con,$sql);
 										
 				if(mysqli_num_rows($results)>0)
