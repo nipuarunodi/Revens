@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,8 +25,46 @@
 				<th width="34%">=  Total Amount</th>
 		  	</tr>
 		    <tr>
-		  		<td><?php echo $income ?></td>
-				<td><?php echo $expenses ?></td>
+				<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT SUM(totalAmount) FROM customerorder";
+				$results = mysqli_query($con,$sql);
+				if(mysqli_num_rows($results)>0)
+				{
+					while($row = mysqli_fetch_assoc($results))
+					{
+						$income= $row['SUM(totalAmount)'];
+				?>
+		  		<td height="46"><?php echo $income  ?></td>
+				<?php
+					}
+				}
+				mysqli_close($con);
+					?>
+				<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT SUM(totalAmount) FROM supplierorder";
+				$results = mysqli_query($con,$sql);
+				if(mysqli_num_rows($results)>0)
+				{
+					while($row = mysqli_fetch_assoc($results))
+					{
+						$expenses= $row['SUM(totalAmount)'];
+				?>
+			  <td><?php echo $expenses ?></td>
+				<?php
+					}
+				}
+				mysqli_close($con);
+				?>
 				<td><?php echo $income-$expenses ?></td>
 		  	</tr>
 		</table></center>
@@ -51,7 +92,7 @@
 				{
 					while($row = mysqli_fetch_assoc($results))
 					{
-						$income = $income + $row['totalAmount'];
+						
 			?>
 			<tr>
 			<td><?php echo $row['orderId'];?></td>
@@ -82,9 +123,10 @@
 				$results = mysqli_query($con,$sql);
 				if(mysqli_num_rows($results)>0)
 				{
+					$expenses;
 					while($row = mysqli_fetch_assoc($results))
 					{
-						$expenses = $expenses + $row['totalAmount'];
+						
 			?>
 			<tr>
 			<td><?php echo $row['orderId'];?></td>
