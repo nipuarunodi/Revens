@@ -6,17 +6,17 @@
 </head>	
 <body>
 	
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table align="center" border="1px" style="width:900px; line-height: 40px;">
 		<tr>
 			<th colspan="7"><h2>Supplier Detail Gathering Venue</h2></th>
 		</tr>
 		
 		<tr>
-			<th>supplierId</th>
-			<th>email</th>
-			<th>teleNo</th>
-			<th>supplierName</th>
-			<th>supplierCompanyName</th>
+			<th>Supplier Id</th>
+			<th>Email</th>
+			<th>Tele No</th>
+			<th>Supplier Name</th>
+			<th>Supplier Company Name</th>
 			<th>&nbsp;</th>
 		</tr>
 	<?php
@@ -41,7 +41,7 @@
 				<td><?php echo $row['teleNo']; ?></td>
 				<td><?php echo $row['supplierName']; ?></td>
 				<td><?php echo $row['supplierCompanyName']; ?></td>
-				<td><a href="DeleteSupplier.php?id=<?php echo $row['supplierId']; ?>">Delete</a>/<a href="OrderSupplier.php?id=<?php echo $row['supplierId']; ?>">Order</a></td>
+				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>">Order</a>&nbsp;/&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>">Supplier Orders View</a>&nbsp;/&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>">Delete</a></td>
 			</tr>
 		<?php
 		    }
