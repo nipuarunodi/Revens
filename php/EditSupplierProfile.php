@@ -24,21 +24,27 @@
 			$row = mysqli_fetch_assoc($result);
 		?>
 		<tr>
-		   <td>Company Name</td>
-			 <td <?php echo $row['supplierCompanyName'];?>></td>
-		 </tr>
-		 <tr>
-		   <td>Supplier Name</td>
-			 <td <?php echo $row['supplierName'];?>></td>
-		 </tr>
-		 <tr>
-		   <td>Email</td>
-			 <td <?php echo $row['email'];?>></td>
-		 </tr>
-		 <tr>
-		   <td>Tele No</td>
-			 <td <?php echo $row['teleNo'];?>></td>
-		 </tr>
+		  <td>Supplier Name</td>
+			<td><input type="text" id="txtsupplierName" name="txtsupplierName" value="<?php echo $row['supplierName'];?>"></td>
+		</tr>
+																														 
+		<tr>
+		  <td>Supplier Company Name</td>
+			<td><input type="text" id="txtsupplierCompanyName" name="txtsupplierCompanyName" value="<?php echo $row['supplierCompanyName'];?>"></td>
+		</tr>	
+	
+		<tr>
+		  <td>Email</td>
+			<td><input type="text" id="txtemail" name="txtemail" value="<?php echo $row['email'];?>">
+		 </td>
+		</tr>
+		
+	    <tr>
+		  <td>Tele No</td>
+			<td><input type="text" id="txtteleNo" name="txtteleNo" value="<?php echo $row['teleNo'];?>">
+		 </td>
+		</tr>
+		  
 		  <td>&nbsp;</td>
 			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update"></td>
 		  </tr>
