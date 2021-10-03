@@ -106,7 +106,7 @@
 										
 				if(mysqli_num_rows($results)>0)
 				{
-					header('Location:OrderSupplier.php');
+					header('Location:Supplier.php');
 				}
 				else
 				{ 
