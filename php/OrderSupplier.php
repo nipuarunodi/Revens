@@ -102,16 +102,13 @@
 						die("Sorry, We are facing a technical issue");		
 				}	
 		$sql = "INSERT INTO `supplierorder` (`supplierId`,`orderDetails`,`orderStatus`,`orderDate`) VALUES ('".$supplierId."','".$orderDetails."','".$orderStatus."','".$date."')";
-				$results = mysqli_query($con,$sql);
 										
-				if(mysqli_num_rows($results)>0)
-				{
-					header('Location:Supplier.php');
-				}
-				else
-				{ 
-					echo "Please enter details again";
-				}
+					mysqli_query($con,$sql);
+		            
+					mysqli_close($con);
+		
+					echo "<script type='text/javascript'> document.location = 'Supplier.php' </script>";
+
 			}
 				?>
 	
