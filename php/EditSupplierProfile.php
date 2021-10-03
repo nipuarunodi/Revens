@@ -56,7 +56,7 @@ if(!isset($_SESSION["id"]))
 		</tr>
 		  
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update"></td>
+			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update" onClick="validateAll()"></td>
 		  </tr>
 		  <?php
 		}
@@ -91,4 +91,85 @@ if(!isset($_SESSION["id"]))
 					
 	}
 ?>
+
+
+
+  <script type="text/javascript">
+
+		function validateSupplierName()
+		{
+			var fname = document.getElementById("txtsupplierName").value;
+
+			if(fname=="  "|| fname==null)
+			   {
+				 alert("Please enter the full name");
+				 return false;
+			   }
+			else{
+				return true;
+			}
+		}
+
+		function validateEmail()
+		{
+			var email= document.getElementById("txtemail").value;
+
+			var at= email.indexOf("@");
+			var dt= email.lastIndexOf(".");
+			var len= email.length;
+
+			if((at<2) || (dt-at <2) || (len-dt<2))
+			{
+				alert("Plese enter a valid email address")
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+
+
+		function validateCompany()
+		{
+			var address = document.getElementById("txtsupplierCompanyName").value;
+
+			if(address == " " || address == null)
+				{
+					alert("Please Enter the Company Name");
+					return false;
+				}
+			else{
+				return true;
+			}
+
+		}
+
+
+		function validateContactNum()
+			{
+				var number = document.getElementById("txtteleNo").value
+
+				if((isNaN(number)) || (number.length !=10))
+					{
+						alert("Please enter valid contact number");
+						return false;
+					}
+				else{
+					return true;
+				}
+
+			}
+
+		function validateAll()
+		{
+			  if(validateUserName() && validateEmail() && validatePassword() && validateCompany() && validateContactNum())
+			 {
+			   alert("Successfully Registerd");
+			 }
+			  else
+			 {
+			   event.preventDefault(); 
+			 }
+		}
+	</script>
 </html>
