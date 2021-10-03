@@ -36,7 +36,7 @@
 					
 					if(($username==$_POST["txtEmail"])&&($password==$_POST["password"]))
 					{
-						header('Location:orderList.php');
+						header('Location:OrderList.php');
 					}
 					else
 					{
