@@ -13,7 +13,7 @@ $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 			
 		echo '<script>alert("Successfully Deleted!")</script>';
 
-		header('Location:Payments.php');
+		header('Location:AddPayments.php');
 	
 
 	?>

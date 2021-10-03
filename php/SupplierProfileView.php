@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php session_start();
 
-if(!isset($_SESSION["supplierId"]))
+if(!isset($_SESSION["id"]))
 {
 	header('Location:login.php');
 }
@@ -22,7 +22,7 @@ if(!isset($_SESSION["supplierId"]))
 		 {
 			 die("Cannot connect to DB server");
 		 }
-		 $sql = "SELECT * FROM supplier WHERE supplierId = '".$_SESSION["supplierId"]."'";
+		 $sql = "SELECT * FROM supplier WHERE supplierId = '".$_SESSION["id"]."'";
 		 $result = mysqli_query($con,$sql);
 		 if(mysqli_num_rows($result)>0)
 		 {
@@ -30,25 +30,29 @@ if(!isset($_SESSION["supplierId"]))
 		 ?>
 		 <tr>
 		   <td>Company Name</td>
-			 <td <?php echo $row['supplierCompanyName'];?>></td>
+			 <td> <?php echo $row['supplierCompanyName'];?></td>
 		 </tr>
 		 <tr>
 		   <td>Supplier Name</td>
-			 <td <?php echo $row['supplier Name'];?>></td>
+			 <td> <?php echo $row['supplier Name'];?></td>
 		 </tr>
 		 <tr>
 		   <td>Email</td>
-			 <td <?php echo $row['email'];?>></td>
+			 <td> <?php echo $row['email'];?></td>
 		 </tr>
 		 <tr>
 		   <td>Tele No</td>
-			 <td <?php echo $row['teleNo'];?>></td>
+			 <td> <?php echo $row['teleNo'];?></td>
 		 </tr>
-		 
+		 <a href="SupplierOrderList.php?id=<?php echo $row['supplierId'] ?>">View Orders</a>&nbsp;
+		 <a href="EditSupplierProfile.php?id=<?php echo $row['supplierId'] ?>">Edit Profile</a>
 		 
 		 <?php
 		 }
 		 ?>
 		</table>
 		 </center>
+	</body>
+</html>
+	
 	
