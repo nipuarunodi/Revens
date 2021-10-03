@@ -24,6 +24,11 @@ if(!isset($_SESSION["id"]))
                             <h1 class="loginHeader">Add Order</h1>
                         </td>
                     </tr>
+						
+					<tr>
+						<td height="49" class="inputFields">Upload Your Prescription  : </td>
+                        <td><input type="file" name="fileImage" id="fileImage" /></td>
+                    </tr>
                     <tr>
                         <td width="170" height="37" class="inputFields">Order Details :</td>
                         <td width="218"><input type="text" name="txtDetails" id="txtDetails" /></td>
@@ -34,10 +39,6 @@ if(!isset($_SESSION["id"]))
                             <input type="radio" name="delivery" value="Delivery"/>Delivery
                             <input type="radio" name="delivery" value="PickUp"/>PickUp
                         </td>
-                        </tr>
-                        <tr>
-                            <td height="49" class="inputFields">Upload Your Prescription  : </td>
-                            <td><input type="file" name="fileImage" id="fileImage" /></td>
                         </tr>
                         <tr>
                             <td height="55" colspan="2" style="text-align:center"><blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
