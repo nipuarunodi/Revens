@@ -6,6 +6,7 @@
 </head>
 
 <body>
+	<center>
 	<form action="supplierRegister.php" method="post">
 	<div class="signup-box">
  
@@ -58,8 +59,9 @@
         
 
             <div class="input-group">
-                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" >
+                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
             </div>
+		</center>
 	   </form>
     </div>
 </div>
@@ -92,5 +94,98 @@
 		}
 			
 		?>
+
+     <script>
+
+		function validateUserName()
+		{
+			var fname = document.getElementById("txtUsername").value;
+
+			if(fname=="  "|| fname==null)
+			   {
+				 alert("Please enter the full name");
+				 return false;
+			   }
+			else{
+				return true;
+			}
+		}
+
+		function validateEmail()
+		{
+			var email= document.getElementById("txtEmail").value;
+
+			var at= email.indexOf("@");
+			var dt= email.lastIndexOf(".");
+			var len= email.length;
+
+			if((at<2) || (dt-at <2) || (len-dt<2))
+			{
+				alert("Plese enter a valid email address")
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+
+		function validatePassword()
+		{
+			 var pwd=document.getElementById("txtPassword").value;
+			 var cpwd=document.getElementById("txtConfirm_Password").value;
+
+			 if((pwd == "")|| (pwd == null)|| (pwd!= cpwd))
+			 {
+				 alert("Please enter correct password and matching confirm password");
+				 return false;
+			 }
+			else{
+				return true;
+			}
+		 }
+
+		function validateCompany()
+		{
+			var address = document.getElementById("txtCompany").value;
+
+			if(address == "" || address == null)
+				{
+					alert("Please Enter the Company Name");
+					return false;
+				}
+			else{
+				return true;
+			}
+
+		}
+
+
+		function validateContactNum()
+			{
+				var number = document.getElementById("txtNumber").value
+
+				if((isNaN(number)) || (number.length !=10))
+					{
+						alert("Please enter valid contact number");
+						return false;
+					}
+				else{
+					return true;
+				}
+
+			}
+
+		function validateAll()
+		{
+			  if(validateUserName() && validateEmail() && validatePassword() && validateCompany() && validateContact() && validateContactNum())
+			 {
+			   alert("Successfully Registerd");
+			 }
+			  else
+			 {
+			   event.preventDefault(); 
+			 }
+		}
+	</script>
 </html>
 

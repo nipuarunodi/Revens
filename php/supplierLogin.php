@@ -7,6 +7,7 @@
 </head>
 
 <body>
+	<center>
 	<form action="supplierLogin.php" method="post">
 	 <h1 class="form-heading"> Sign In </h1>
             
@@ -48,11 +49,12 @@
 					}
 			    }
 			?>
-	       
+	       <br>
             <div class="input-group">
                 <input class="input-btn" type="submit" name="btnSignIn" value="Sign In">
-                <input class="input-btn" style="float: left;" type="button" id="btnSignUp" value="Sign Up">
+                <input class="input-btn" type="button" id="btnSignUp" value="Sign Up">
             </div>
+		</center>
 	</form>
 </body>
 </html>
