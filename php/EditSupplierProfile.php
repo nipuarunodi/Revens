@@ -31,15 +31,17 @@ if(!isset($_SESSION["id"]))
 			
 			$row = mysqli_fetch_assoc($result);
 		?>
-		<tr>
-		  <td>Supplier Name</td>
-			<td><input type="text" id="txtsupplierName" name="txtsupplierName" value="<?php echo $row['supplierName'];?>"></td>
-		</tr>
+		
 																														 
 		<tr>
 		  <td>Supplier Company Name</td>
 			<td><input type="text" id="txtsupplierCompanyName" name="txtsupplierCompanyName" value="<?php echo $row['supplierCompanyName'];?>"></td>
-		</tr>	
+		</tr>
+		  
+		  <tr>
+		  <td>Supplier Name</td>
+			<td><input type="text" id="txtsupplierName" name="txtsupplierName" value="<?php echo $row['supplierName'];?>"></td>
+		</tr>
 	
 		<tr>
 		  <td>Email</td>
@@ -66,10 +68,10 @@ if(!isset($_SESSION["id"]))
 	<?php
 	if(isset($_POST["btnsubmit"])>0)
 	{
-		$supplierCompanyName = $_POST["supplierCompanyName"];
-		$supplierName = $_POST["supplierName"];
-		$email = $_POST["email"];
-		$teleNo = $_POST["teleNo"];
+		$supplierCompanyName = $_POST["txtsupplierCompanyName"];
+		$supplierName = $_POST["txtsupplierName"];
+		$email = $_POST["txtemail"];
+		$teleNo = $_POST["txtteleNo"];
 		
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 					if(!$con)
@@ -77,7 +79,7 @@ if(!isset($_SESSION["id"]))
 						die("Cannot conect to the database server");
 					}
 					
-					$sql = "UPDATE supplier SET supplierCompanyName = '$supplierCompanyName', supplierName = '$supplierName', email = '$_email',teleNo = '$_teleNo' WHERE supplierId  = '".$_GET['id']."'";
+					$sql = "UPDATE supplier SET supplierCompanyName = '$supplierCompanyName', supplierName = '$supplierName', email = '$email',teleNo = '$teleNo' WHERE supplierId  = '".$_GET['id']."'";
 		
 					mysqli_query($con,$sql);
 		            
@@ -85,7 +87,7 @@ if(!isset($_SESSION["id"]))
 					
 					echo '<script>alert("Successfully Updated!")</script>';
 		
-		            echo "<script type='text/javascript'> document.location = 'SupplierProfile.php'; </script>";
+		            echo "<script type='text/javascript'> document.location = 'SupplierProfileView.php'; </script>";
 					
 	}
 ?>
