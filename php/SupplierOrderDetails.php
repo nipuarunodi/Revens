@@ -17,6 +17,51 @@ if(!isset($_SESSION["id"]))
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	<script type="text/javascript" >
+	  
+	  function validateOrderStatus()
+		{
+			var orderStatus = document.getElementById("txtOrderStatus").value;
+			
+			if(orderStatus=="  " || orderStatus==null)
+				{
+					alert("Please select Order Status");
+					return false;
+				}
+			else
+				{
+					return true;
+				}
+		}
+		
+		function validateOrderAmount()
+		{
+			var orderAmount = document.getElementById("txtOrderAmount").value;
+			
+			if(orderAmount=="  " || orderAmount==null)
+				{
+					alert("Please Enter the Order Amount");
+					return false;
+				}
+			else
+				{
+					return true;
+				}
+		}
+		
+		function validateAll()
+		{
+			if(validateOrderStatus() && validateOrderAmount())
+				{
+					alert("Successfully updated");
+				}
+			else
+				{
+					event.preventDefault();
+				}
+		}
+	  
+	  </script>
 	  
   </head>
   <body>
@@ -60,7 +105,7 @@ if(!isset($_SESSION["id"]))
 			</tr>
 			<tr>
 			<td>Order Amount</td>
-			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>"></td>
+			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>" onClick="validateAll()"></td>
 			</tr>
 			<tr>
 			<td>&nbsp;</td>

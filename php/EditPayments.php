@@ -10,6 +10,48 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	<script type="text/javascript">
+	  
+	  function validatePaymentDetails()
+		{
+			var paymentDetails = document.getElementById("txtPaymentDetails").value;
+
+			if(paymentDetails=="  "|| paymentDetails==null)
+			   {
+				 alert("Please enter the Payment Details");
+				 return false;
+			   }
+			else{
+				return true;
+			}
+		}
+		
+	function validateAmount()
+		{
+			var amount = document.getElementById("txtAmount").value;
+
+			if(amount=="  "|| amount==null)
+			   {
+				 alert("Please enter the Amount");
+				 return false;
+			   }
+			else{
+				return true;
+			}
+		}
+		
+	function validateAll()
+		{
+			if(validatePaymentDetails() && validateAmount())
+				{
+					alert("Successfully Updated");
+				}
+			else{
+				event.preventDefault();
+			}
+		}
+		
+	  </script>
 	  
   </head>
   <body>
@@ -44,7 +86,7 @@
 		  </tr>
 		  <tr>
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Edit">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
+			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Edit" onClick="validateAll()">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
 		  </tr>
 		  <?php
 		}
