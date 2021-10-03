@@ -1,3 +1,10 @@
+<?php session_start();
+
+if(!isset($_SESSION["id"]))
+{
+	header('Location:supplierLogin.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +23,8 @@
 		{	
 			die("Cannot connect to DB server");		
 		}
-		$sql ="SELECT * FROM supplier WHERE supplierId ='".$_GET['id']."'";	
+		$sql ="SELECT * FROM supplier WHERE supplierId ='".$_GET['id']."'";
+		  
 		$result = mysqli_query($con,$sql);
 		if(mysqli_num_rows($result)> 0)
 		{
@@ -56,7 +64,7 @@
 	  </center>
   </body>
 	<?php
-	if(isset($_POST["btnsubmit"]))
+	if(isset($_POST["btnsubmit"])>0)
 	{
 		$supplierCompanyName = $_POST["supplierCompanyName"];
 		$supplierName = $_POST["supplierName"];
