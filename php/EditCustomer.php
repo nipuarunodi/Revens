@@ -1,5 +1,15 @@
+<?php session_start();
+
+if(!isset($_SESSION["id"]))
+{
+	header('Location:customerLogin.php');
+}
+?>
+
+
 <?php 
 include "config.php";
+    
 
 
 	if (isset($_POST['update'])) {
@@ -53,7 +63,7 @@ include "config.php";
   </head>
 	
 <body>
-   <form action="customerRegister.php" method="post" align="center">
+   <form action="EditCustomer.php" method="post" align="center">
 	<div class="signup-box">
  
             <h1 class="form-heading" >Update customer profile</h1>
@@ -100,7 +110,7 @@ include "config.php";
 	}else{
 		
 		
-		echo("<script type='text/javascript'> document.location = 'CustomeViewProfile.php'; </script>");
+		echo("<script type='text/javascript'> document.location = 'CustomerViewProfile.php'; </script>");
 		
 		
 	}
