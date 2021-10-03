@@ -21,7 +21,7 @@ if(!isset($_SESSION["id"]))
   </head>
   <body>
 	  <center><h1>Order Details</h1></center><br>
-	<center><form action="SupplierOrderDetails.php" method="post">
+	<center><form action="SupplierOrderDetails.php?id=<?php echo $_GET['id']?>" method="post">
 		<table border="0">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -64,7 +64,7 @@ if(!isset($_SESSION["id"]))
 			</tr>
 			<tr>
 			<td>&nbsp;</td>
-			<td><input type="submit" id="btnUpdate" name="btnUpdate"></td>
+			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update"></td>
 			</tr>
 		<?php
 		}
@@ -72,7 +72,7 @@ if(!isset($_SESSION["id"]))
 		</table>
 		</form></center>
 	  <?php
-	  if(isset($_POST["btnSubmit"]))
+	  if(isset($_POST["btnUpdate"]))
 	  {
 		  $orderAmount = $_POST["txtOrderAmount"];
 		  $orderStatus = $_POST["txtOrderStatus"];
