@@ -18,6 +18,7 @@ include "config.php";
 
 		if ($result == TRUE) {
 			echo '<script>alert("Successfully Updated!")</script>';
+			echo("<script type='text/javascript'> document.location = 'ViewStocks.php'; </script>");
 			
 		}else{
 			echo "Error:" . $sql . "<br>" . $conn->error;
@@ -50,43 +51,99 @@ include "config.php";
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Update Stocks</title>
   </head>
-	
-   <body>
-    <h2><center style="font-size: 36px; font-weight: inherit;">Stock Update Page</center></h2>
-   <form action="UpdateStocks.php" method="post">
-    <br>
-    <table width="462" height="274" border="0" align="center">
+  <body>
+  <h2><center style="font-size: 36px; font-weight: inherit;">Stock Update Page</center></h2>
+  <form action="UpdateStocks.php" method="post">
+  <br>
+  <table width="462" height="274" border="0" align="center">
 		      <tbody>
 		        <tr>
 		          <td width="189" height="54">Drug Code:</td>
-		          <td width="175"><input type="text" name="drugCode" value="<?php echo $drugCode; ?>">
+		          <td width="175"><input type="text" name="drugCode" id="drugCode" placeholder="DCNXX-XX-XX" value="<?php echo $drugCode; ?>" required/>
 				  <input type="hidden" name="Did" value="<?php echo $Did; ?>">
 	            </tr>
 		        <tr>
 		          <td height="47">Drug Name:</td>
-		          <td><input type="text" name="drugName" value="<?php echo $drugName; ?>"></td>
+		          <td><input type="text" name="drugName" id="drugName" value="<?php echo $drugName; ?>" required/></td>
 	            </tr>
 		        <tr>
 		          <td>Price:</td>
-		          <td><input type="text" name="price" value="<?php echo $price; ?>"></td>
+		          <td><input type="text" name="price"  id="price"value="<?php echo $price; ?>" required/></td>
 	            </tr>
 		        <tr>
 		          <td>Quantity:</td>
-		          <td><input type="number" name="quantity" value="<?php echo $quantity; ?>"></td>
+		          <td><input type="number" name="quantity" id="quantity" value="<?php echo $quantity; ?>" required/></td>
 	            </tr>
 		        <tr>
-		          <td colspan="2"><input type="submit" value="Update" name="update"></td>
+		          <td colspan="2"><input type="submit" name="update" value="Update"  onClick="validateAll()"/></td>
 	            </tr>
      </tbody>
      </table>
-     </form>
-     </body>
-</html>
-<?php
-	}else{
+  </form>
+ </body>
+<script>
+	function validatedrugCode()
+	{
+		var drugCode=document.getElementById("drugCode").value;
+		var p1=drugCode.substring(0,3);
+		
+		var n1=drugCode.substring(3,5);
+		var arr=drugCode.split("-");
+		
+		if((p1=="DCN")&& (!isNaN(n1))&& (!isNaN(arr[1]))&&(!isNaN(arr[2]))&&(arr[1].length==2)&&(arr[2].length==2))
+			{
+			  return true;
+			} 
+		    alert ("Please enter correct Drug Code format");
+		    return false;
+			
+	}
+	function validatedrugName(str)
+		{
+			var str = document.getElementById("drugName").value;
 
-		echo("<script type='text/javascript'> document.location = 'ViewStocks.php'; </script>");
-	
+			if((!str || 0 === str.length))
+				{
+					alert("Please Enter the Drug name");
+				    return false;
+					
+				}
+			else{
+				return true;
+				
+			}
+
+		}
+	function validateprice()
+	{
+		var pno=document.getElementById("price").value;
+		
+		
+		if((pno>1)&& (!isNaN(pno)))
+			{
+			  return true;
+			} 
+		    alert ("Please enter a valid price");
+		    return false;
+			
+	}
+	function validateAll()
+	{
+		if(validatedrugCode() && validatedrugName() && validateprice() )
+		{
+			alert("Validation is done");
+		}
+		else{
+			event.preventDefault();
+		}
 	}
 
+</script>
+</html>
+		
+<?php
+	}
+
+
 ?>
+
