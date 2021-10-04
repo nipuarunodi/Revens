@@ -13,38 +13,37 @@ include "config.php";
 
 
 	if (isset($_POST['update'])) {
-		$customerID = $_POST['customerID'];
-		$customerName = $_POST['customerName'];
-		$teleNo = $_POST['teleNo'];
+		
+		$customerName = $_POST['username'];
+		$teleNo = $_POST['number'];
 		$email = $_POST['email'];
-		$address  = $row['address'];
+		$address  = $_POST['address'];
 		
 
 		
-		$sql = "UPDATE `customer` SET `customerID`='$customerID',`customerName`='$customerName',`teleNo`='$teleNo,`email`='$email' WHERE `customerID`='$customerID'";
+		$sql = "UPDATE `customer` SET `customerName`='$customerName',`teleNo`='$teleNo',`email`='$email',`address`='$address' WHERE `customerId`='".$_GET['id']."'";
 
 		
 		$result = $conn->query($sql);
 
 		if ($result == TRUE) {
 			echo '<script>alert("Successfully Updated!")</script>';
-			
+			echo("<script type='text/javascript'> document.location = 'CustomerViewProfile.php'; </script>");
 		}else{
 			echo "Error:" . $sql . "<br>" . $conn->error;
 		}
 	}
 
   
-	$Did = $_GET['id'];
+	$customerId = $_GET['id'];
 
-	$sql = "SELECT * FROM `customer` WHERE `customerID`='$customerID'";
+	$sql = "SELECT * FROM `customer` WHERE `customerId`='$customerId'";
 
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
 		
-		    $row = $result->fetch_assoc(); 
-			$customerID = $row['customerID'];
+		    $row = $result->fetch_assoc();
 			$customerName = $row['customerName'];
 			$teleNo  = $row['teleNo'];
 		    $email  = $row['email'];
@@ -59,11 +58,10 @@ include "config.php";
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Update Stocks</title>
+    <title>Update customer stocks</title>
   </head>
-	
-<body>
-   <form action="EditCustomer.php" method="post" align="center">
+  <body>
+   <form action="EditCustomer.php?id=<?php echo $_GET['id']?>" method="post" align="center">
 	<div class="signup-box">
  
             <h1 class="form-heading" >Update customer profile</h1>
@@ -93,26 +91,103 @@ include "config.php";
               </p>
               <p>&nbsp;</p>
 		    </div>
-		
            <div class="input-group">
-               <p>
-                 <input class="input-checkbox" type="checkbox" name="clickterms" id="clickterms" required>
-                 <label class="input-checkbox" for="checkbox"> I agree to the terms of services </label>
-               </p>
-           </div>
-           <div class="input-group">
-                <input class="input-btn" name="update" type="update" id="update" value="Update" >
-            </div>
-	   </form>
-  </body>
+             <input type="submit" name="update" id="update" value="Update" onClick="validateAll()"/>
+          </div>
+</form>
+</body>
+<script type="text/javascript">
+
+		function validateUserName(str)
+		{
+			var str = document.getElementById("txtUsername").value;
+
+			if((!str || 0 === str.length))
+				{
+					alert("Please Enter the user name");
+				    return false;
+					
+				}
+			else{
+				return true;
+				
+			}
+
+		}
+	
+		function validateEmail()
+		{
+			var email= document.getElementById("txtEmail").value;
+
+			var at= email.indexOf("@");
+			var dt= email.lastIndexOf(".");
+			var len= email.length;
+
+			if((at<2) || (dt-at <2) || (len-dt<2))
+			{
+				alert("Plese enter a valid email address")
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+
+
+		function validateAddress(str)
+		{
+			var str = document.getElementById("txtAddress").value;
+
+			if((!str || 0 === str.length))
+				{
+					alert("Please Enter the Address");
+				    return false;
+					
+				}
+			else{
+				return true;
+				
+			}
+
+		}
+
+
+		function validateContactNum()
+			{
+				var number = document.getElementById("txtNumber").value
+
+				if((isNaN(number)) || (number.length !=10))
+					{
+						alert("Please enter valid contact number");
+						return false;
+					}
+				else{
+					return true;
+				}
+
+			}
+
+		function validateAll()
+		{
+			  if(validateUserName() && validateEmail() && validateAddress()  && validateContactNum())
+			 {
+			   alert("Validation is done ");
+			 }
+			  else
+			 {
+			   event.preventDefault(); 
+			 }
+		}
+	</script>
 </html>
+
+	
 <?php
 	}else{
-		
-		
+
 		echo("<script type='text/javascript'> document.location = 'CustomerViewProfile.php'; </script>");
-		
-		
+	
 	}
 
 ?>
+	
