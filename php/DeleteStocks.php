@@ -11,11 +11,11 @@ include "config.php";
 
 	if ($result == TRUE) {
 		echo '<script>alert("Successfully Deleted!")</script>';
+		echo("<script type='text/javascript'> document.location = 'ViewStocks.php'; </script>");
 	}else{
 		echo '<script>alert("Cannot delete Stock details!")</script>';
 	}
 
-echo "<script type='text/javascript'> document.location = 'ViewStocks.php'; </script>";
 ?>
 
 
