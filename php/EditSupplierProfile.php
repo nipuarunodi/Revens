@@ -131,9 +131,9 @@ if(!isset($_SESSION["id"]))
 
 		function validateCompany()
 		{
-			var address = document.getElementById("txtsupplierCompanyName").value;
+			var company = document.getElementById("txtsupplierCompanyName").value;
 
-			if(address == " " || address == null)
+			if(company == " " || company == null)
 				{
 					alert("Please Enter the Company Name");
 					return false;
@@ -162,9 +162,9 @@ if(!isset($_SESSION["id"]))
 
 		function validateAll()
 		{
-			  if(validateUserName() && validateEmail() && validatePassword() && validateCompany() && validateContactNum())
+			  if(validateUserName() && validateEmail() && validateCompany() && validateContactNum())
 			 {
-			   alert("Successfully Registerd");
+			   alert("Successfully Updated");
 			 }
 			  else
 			 {
