@@ -127,7 +127,6 @@
         <td width="247"><input type="submit" name="reject"
                 class="button" value="Reject" /></td>
         <td width="244"><input type="button" name="button3" id="button3" value="Back"></td>
-        <td width="199"><input type="button" name="button4" id="button4" value="Print Bill"></td>
       </tr>
     </tbody>
   </table>
