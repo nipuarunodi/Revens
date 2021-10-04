@@ -24,9 +24,13 @@ $result = $conn->query($sql);
 <body>
 	<div class="container">
 		<h2><center style="font-weight: inherit; font-size: 36px;">
-		  <p>View Stocks Page</p></center></h2>
-		  <p>&nbsp; </p>
-	    <table width="666" border="1" align="center" class="table">
+		  <p>View Stocks Page		</p>
+		</center>
+		</h2>
+		  <p><a href="StockManagement.php">
+          <center></center>
+          </a></p>
+      <table width="666" border="1" align="center" class="table">
 	<thead>
 		<tr>
 		<th width="119">Did</th>
@@ -60,6 +64,9 @@ $result = $conn->query($sql);
 	        	
      </tbody>
    </table>
+      <p><center><a href="StockManagement.php">
+      <input type="button" name="button" id="button" value="Back">
+      </a></center></p>
   </div>
 </body>
 </html>
