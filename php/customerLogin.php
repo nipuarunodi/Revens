@@ -39,7 +39,7 @@
 					{
 						$row = mysqli_fetch_assoc($results);
 						$_SESSION["id"] = $row['customerId'];
-						header('Location:CustomerViewProfile');
+						header('Location:CustomerViewProfile.php');
 					}
 					else
 					{ 
