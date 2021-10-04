@@ -43,7 +43,7 @@ include "config.php";
   <body>
         <h2><center style="font-weight: inherit; font-size: 36px;">
         <p style="color: #000000">Manage Stocks</p></center></h2>
-  <form action="StockManagement.php" method="POST">
+        <form action="StockManagement.php" method="POST">
         <p><br></p>
 	  
         <table width="462" height="307" border="0" align="center">
@@ -58,7 +58,7 @@ include "config.php";
         </tr>
         <tr>
           <td>Price:</td>
-          <td><input type="text" name="price" id="price" required/></td>
+          <td><input type="text" name="price" id="price" placeholder="Ex:500" required/></td>
         </tr>
         <tr>
           <td>Quantity:</td>
@@ -89,16 +89,46 @@ include "config.php";
 		
 		if((p1=="DCN")&& (!isNaN(n1))&& (!isNaN(arr[1]))&&(!isNaN(arr[2]))&&(arr[1].length==2)&&(arr[2].length==2))
 			{
-			return true;
-			}
+			  return true;
+			} 
 		    alert ("Please enter correct Drug Code format");
 		    return false;
+			
+	}
+	function validatedrugName(str)
+		{
+			var str = document.getElementById("drugName").value;
+
+			if((!str || 0 === str.length))
+				{
+					alert("Please Enter the Drug name");
+				    return false;
+					
+				}
+			else{
+				return true;
+				
+			}
+
+		}
+	function validateprice()
+	{
+		var pno=document.getElementById("price").value;
+		
+		
+		if((pno>1) || (!isNaN(pno)))
+			{
+			  return true;
+			} 
+		    alert ("Please enter a valid price");
+		    return false;
+			
 	}
 	function validateAll()
 	{
-		if(validatedrugCode())
+		if(validatedrugCode() && validatedrugName()&& validateprice() )
 		{
-			alert("Drug code is correct");
+			alert("Validation is done");
 		}
 		else{
 			event.preventDefault();
