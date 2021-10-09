@@ -18,30 +18,34 @@ $result = $conn->query($sql);
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>View Stocks</title>
   </head>
 	
 <body>
-	<div class="container">
-		<h2><center style="font-weight: inherit; font-size: 36px;">
-		  <p>View Stocks Page		</p>
-		</center>
-		</h2>
-		  <p><a href="StockManagement.php">
-          <center></center>
-          </a></p>
-      <table width="666" border="1" align="center" class="table">
+	<h2><center style="font-weight: inherit; font-size: 36px;">
+	<p>View Stocks Page</p>
+	<p>&nbsp;</p>
+	</center></h2>
+	<p><div class="container">
+  <p><center style="font-size: 18px; font-weight: 300;">Filter the stocks details:</center></p>  
+  <p>
+   <center><input class="form-control" id="myInput" type="text"placeholder="Search.."></center> 
+  </p>
+  <p><br>
+  </p>
+  <table width="92%" border="1" align="center" class="table">
 	<thead>
 		<tr>
-		<th width="119">Did</th>
-		<th width="119">Drug Code</th>
-		<th width="127">Drug Name</th>
-		<th width="128">Price</th>
-		<th width="134">Quantity</th>
-		<th width="134">Action</th>
+		<th width="165">Did</th>
+		<th width="166">Drug Code</th>
+		<th width="176">Drug Name</th>
+		<th width="176">Price</th>
+		<th width="160">Quantity</th>
+		<th width="141">Action</th>
 	</tr>
 	</thead>
-	<tbody>	
+	<tbody id="myTable">	
 		<?php
 			if ($result->num_rows > 0) {
 				
@@ -54,7 +58,7 @@ $result = $conn->query($sql);
 					<td><?php echo $row['drugName']; ?></td>
 					<td><?php echo $row['price']; ?></td>
 					<td><?php echo $row['quantity']; ?></td>
-					<td width="124"><a class="btn btn-info" href="UpdateStocks.php?id=<?php echo $row['Did']; ?>">Update</a>&nbsp;<a class="btn btn-danger" href="DeleteStocks.php?id=<?php echo $row['Did']; ?>">Delete</a></td>
+					<td width="141"><a class="btn btn-info" href="UpdateStocks.php?id=<?php echo $row['Did']; ?>">Update</a>&nbsp;<a class="btn btn-danger" href="DeleteStocks.php?id=<?php echo $row['Did']; ?>">Delete</a></td>
 					</tr>	
 					
 		<?php		
@@ -68,5 +72,15 @@ $result = $conn->query($sql);
       <input type="button" name="button" id="button" value="Back">
       </a></center></p>
   </div>
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </body>
 </html>
