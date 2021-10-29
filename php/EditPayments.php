@@ -21,9 +21,9 @@
 				 alert("Please enter the Payment Details");
 				 return false;
 			   }
-			else{
+			
 				return true;
-			}
+			
 		}
 		
 	function validateAmount()
@@ -35,9 +35,9 @@
 				 alert("Please enter the Amount");
 				 return false;
 			   }
-			else{
+			
 				return true;
-			}
+			
 		}
 		
 	function validateAll()

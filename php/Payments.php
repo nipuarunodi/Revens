@@ -38,10 +38,11 @@
 					while($row = mysqli_fetch_assoc($results))
 					{
 						$income= $row['SUM(totalAmount)'];
+					}
 				?>
 		  		<td height="46"><?php echo $income  ?></td>
 				<?php
-					}
+					
 				}
 				mysqli_close($con);
 					?>
@@ -58,10 +59,11 @@
 					while($row = mysqli_fetch_assoc($results))
 					{
 						$expenses= $row['SUM(totalAmount)'];
+					}
 				?>
 			  <td><?php echo $expenses ?></td>
 				<?php
-					}
+					
 				}
 				mysqli_close($con);
 				?>

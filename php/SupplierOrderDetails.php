@@ -28,10 +28,10 @@ if(!isset($_SESSION["id"]))
 					alert("Please select Order Status");
 					return false;
 				}
-			else
-				{
+			
+				
 					return true;
-				}
+				
 		}
 		
 		function validateOrderAmount()
@@ -43,10 +43,10 @@ if(!isset($_SESSION["id"]))
 					alert("Please Enter the Order Amount");
 					return false;
 				}
-			else
-				{
+			
+			
 					return true;
-				}
+				
 		}
 		
 		function validateAll()

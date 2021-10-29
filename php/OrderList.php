@@ -6,6 +6,73 @@
 </head>
 
 <body>
+	<center><table width="60%" border="0">
+		<tr>
+			<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT count(orderStatus) FROM customerorder where orderStatus = 'Pending'";
+				$results = mysqli_query($con,$sql);
+				
+				
+					while($row = mysqli_fetch_array($results))
+					{
+					  
+					
+				?>
+		<td width="20%">No Of Pending Orders : <?php echo $row['count(orderStatus)']; ?></td>
+			<?php
+					}
+				
+				mysqli_close($con);
+					?>
+			<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT count(orderStatus) FROM customerorder where orderStatus = 'Confirmed'";
+				$results = mysqli_query($con,$sql);
+				
+				
+					while($row = mysqli_fetch_array($results))
+					{
+					  
+					
+				?>
+		<td width="20%">No Of Confirmed Orders : <?php echo $row['count(orderStatus)']; ?></td>
+			<?php
+					}
+				
+				mysqli_close($con);
+					?>
+			<?php
+				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
+				if(!$con)
+				{
+					die("Cannot connect to the database server");
+				}
+				$sql = "SELECT count(orderStatus) FROM customerorder where orderStatus = 'Rejected'";
+				$results = mysqli_query($con,$sql);
+				
+				
+					while($row = mysqli_fetch_array($results))
+					{
+					  
+					
+				?>
+		<td width="20%">No Of Rejected Orders : <?php echo $row['count(orderStatus)']; ?></td>
+			<?php
+					}
+				
+				mysqli_close($con);
+					?>
+		</tr>
+</table></center>
 <form id="form1" name="form1" method="post">
   <table width="782" height="80" border="0">
     <tbody>
