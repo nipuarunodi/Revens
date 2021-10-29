@@ -50,6 +50,11 @@ include "config.php";
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Update Stocks</title>
+	  
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script> 
   </head>
   <body>
   <h2><center style="font-size: 36px; font-weight: inherit;">Stock Update Page</center></h2>
@@ -77,9 +82,9 @@ include "config.php";
 		        <tr>
 		          <td colspan="2"><input type="submit" name="update" value="Update"  onClick="validateAll()"/></td>
 	            </tr>
-     </tbody>
-     </table>
-  </form>
+          </tbody>
+      </table>
+    </form>
  </body>
 <script>
 	function validatedrugCode()
