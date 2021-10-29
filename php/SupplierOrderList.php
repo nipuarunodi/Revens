@@ -33,6 +33,9 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	<center><h1>My Order List</h1></center><br>
 	  <center>
 	  <table border="1" width="100%">
