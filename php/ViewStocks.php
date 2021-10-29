@@ -18,31 +18,31 @@ $result = $conn->query($sql);
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>View Stocks</title>
+	  
+    <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
   </head>
-	
-<body>
-	<h2><center style="font-weight: inherit; font-size: 36px;">
-	<p>View Stocks Page</p>
-	<p>&nbsp;</p>
-	</center></h2>
+  <body>
+	<center>
+	<h1>View Stocks Page</h1>
+	</center>
 	<p><div class="container">
-  <p><center style="font-size: 18px; font-weight: 300;">Filter the stocks details:</center></p>  
-  <p>
-   <center><input class="form-control" id="myInput" type="text"placeholder="Search.."></center> 
-  </p>
-  <p><br>
-  </p>
-  <table width="92%" border="1" align="center" class="table">
+	  <h4>Filter the stocks details:</h4><p>
+   <input id="myInput" type="text"placeholder="Search.."></p>
+   <p><p>
+     <button onclick="sortTable()">Sort Table</button></p><br></p>
+<table width="92%" border="0" align="center" >
 	<thead>
 		<tr>
-		<th width="165">Did</th>
-		<th width="166">Drug Code</th>
-		<th width="176">Drug Name</th>
-		<th width="176">Price</th>
-		<th width="160">Quantity</th>
-		<th width="141">Action</th>
+		<th width="165" height="46"  >Did</th>
+		<th width="166" >Drug Code</th>
+		<th width="176" >Drug Name</th>
+		<th width="176" >Price</th>
+		<th width="160" >Quantity</th>
+		<th width="141" >Action</th>
 	</tr>
 	</thead>
 	<tbody id="myTable">	
@@ -58,7 +58,7 @@ $result = $conn->query($sql);
 					<td><?php echo $row['drugName']; ?></td>
 					<td><?php echo $row['price']; ?></td>
 					<td><?php echo $row['quantity']; ?></td>
-					<td width="141"><a class="btn btn-info" href="UpdateStocks.php?id=<?php echo $row['Did']; ?>">Update</a>&nbsp;<a class="btn btn-danger" href="DeleteStocks.php?id=<?php echo $row['Did']; ?>">Delete</a></td>
+					<td width="141"><p><a  href="UpdateStocks.php?id=<?php echo $row['Did']; ?>">Update</a>&nbsp;<a href="DeleteStocks.php?id=<?php echo $row['Did']; ?>">Delete</a></p></td>
 					</tr>	
 					
 		<?php		
@@ -66,12 +66,9 @@ $result = $conn->query($sql);
 			}
 		?>
 	        	
-     </tbody>
+        </tbody>
    </table>
-      <p><center><a href="StockManagement.php">
-      <input type="button" name="button" id="button" value="Back">
-      </a></center></p>
-  </div>
+	  
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
@@ -81,6 +78,30 @@ $(document).ready(function(){
     });
   });
 });
-</script>
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+ </script>
 </body>
 </html>

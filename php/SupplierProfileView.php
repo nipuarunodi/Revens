@@ -12,8 +12,25 @@ if(!isset($_SESSION["id"]))
 <meta charset="utf-8">
 <title>Supplier Profile View</title>
 </head>	
+<<<<<<< HEAD
  <body>
 	 
+=======
+<body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item active"> <a class="nav-link" href="SupplierProfileView.php">My Profile</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="SupplierOrderList.php?id=<?php echo $_SESSION["id"] ?>">My Order List</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="EditSupplierProfile.php?id=<?php echo $_SESSION["id"] ?>">Edit My Profile</a> </li>
+          </ul>
+	      
+    </div>
+  </nav>
+>>>>>>> origin/master
 	<center><h1>My Profile</h1></center><br>
 
 	 <center><table border="0">
