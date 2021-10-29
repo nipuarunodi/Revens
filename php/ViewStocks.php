@@ -26,14 +26,12 @@ $result = $conn->query($sql);
 	<script src="../js/bootstrap-4.3.1.js"></script>
   </head>
   <body>
-	<h2><center style="font-weight: inherit; font-size: 36px;">
+	<center>
 	<h1>View Stocks Page</h1>
-	<p>&nbsp;</p>
-	</center></h2>
+	</center>
 	<p><div class="container">
 	  <h4>Filter the stocks details:</h4><p>
    <input id="myInput" type="text"placeholder="Search.."></p>
- 
    <p><br></p>
 <table width="92%" border="0" align="center" >
 	<thead>
