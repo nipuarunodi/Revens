@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Supplier Details</title>
-</head>	
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supplier Details</title>
+	  
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+	  
+  </head>	
+	
 <body>
 	
 	<table align="center" border="1px" style="width:900px; line-height: 40px;">
@@ -19,6 +28,8 @@
 			<th>Supplier Company Name</th>
 			<th>&nbsp;</th>
 		</tr>
+		
+		
 	<?php
     $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		

@@ -32,7 +32,8 @@ $result = $conn->query($sql);
 	<p><div class="container">
 	  <h4>Filter the stocks details:</h4><p>
    <input id="myInput" type="text"placeholder="Search.."></p>
-   <p><br></p>
+   <p><p>
+     <button onclick="sortTable()">Sort Table</button></p><br></p>
 <table width="92%" border="0" align="center" >
 	<thead>
 		<tr>
@@ -77,6 +78,30 @@ $(document).ready(function(){
     });
   });
 });
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[0];
+      y = rows[i + 1].getElementsByTagName("TD")[0];
+      //check if the two rows should switch place:
+      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
  </script>
 </body>
 </html>

@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Supplier Details</title>
-</head>	
-<body>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supplier Order Details</title>
+	  
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+	  
+  </head>	
+	
+ <body>
 	
 	<table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
@@ -17,9 +26,10 @@
 			<th>Order Date</th>
 			<th>Order Details</th>
 			<th>Order Status</th>
-			<th>Total Amount</th>
-			
+			<th>Total Amount</th>	
 		</tr>
+		
+		
 	<?php
 	$supplierId = $_GET['id'];
     $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -52,5 +62,5 @@
 		?>
 	</table>
 	
-	</body>
+ </body>
 </html>
