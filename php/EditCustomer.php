@@ -68,36 +68,36 @@ include "config.php";
   </head>
   <body>
    <form action="EditCustomer.php?id=<?php echo $_GET['id']?>" method="post" align="center">
-	<div class="signup-box">
+	<div>
  
-            <h1 class="form-heading" >Update customer profile</h1>
+            <h1>Update customer profile</h1>
         
-            <div class="input-group">
+            <div>
                 <p>
-                  <label class="input-label">User Name</label>
-                  <input class="input-text" type="text" id="txtUsername" name="username" placeholder="Enter username..." value="<?php echo $customerName; ?>">
+                  <label >User Name</label>
+                  <input type="text" id="txtUsername" name="username" placeholder="Enter username..." value="<?php echo $customerName; ?>">
                 </p>
             </div>
-            <div class="input-group">
+            <div>
               <p>
-                <label class="input-label">Email Address</label>
-                <input class="input-text" type="text" id="txtEmail" name="email" placeholder="Enter email address..." value="<?php echo $email; ?>">
+                <label>Email Address</label>
+                <input type="text" id="txtEmail" name="email" placeholder="Enter email address..." value="<?php echo $email; ?>">
               </p>
             </div>
             <div class="input-group">
               <p>
-                <label class="input-label">Contact Address</label>
-                <input class="input-text" type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
+                <label>Contact Address</label>
+                <input type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
               </p>
             </div>
-	        <div class="input-group">
+	        <div>
               <p>
-                <label class="input-label">Contact Number</label>
-                <input class="input-text" type="text" id="txtNumber" name="number" placeholder="Enter Contact Number..." value="<?php echo $teleNo; ?>">
+                <label>Contact Number</label>
+                <input type="text" id="txtNumber" name="number" placeholder="Enter Contact Number..." value="<?php echo $teleNo; ?>">
               </p>
               <p>&nbsp;</p>
 		    </div>
-           <div class="input-group">
+           <div>
              <input type="submit" name="update" id="update" value="Update" onClick="validateAll()"/>
           </div>
       </form>
