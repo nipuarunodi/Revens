@@ -47,7 +47,7 @@ include "config.php";
    </head>
   <body>   
   <h2><center>
-  <p style="color: #000000; font-size: 50px; font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif;">Manage Stocks</p>
+  <p>Manage Stocks</p>
   </center></h2>
         <form action="StockManagement.php" method="POST">
         <p><br></p>
@@ -55,25 +55,25 @@ include "config.php";
         <tbody>
         <tr>
 		  <div>
-          <td><span  style="font-size: 18px">Drug Code:</span></td>
+          <td><span>Drug Code:</span></td>
           <td><p>
             <input type="text" name="drugCode" id="drugCode" placeholder="DCNXX-XX-XX" required/>
           </p></td></div>
         </tr>
         <tr>
-		  <td><span style="font-size: 18px">Drug Name:</span></td>
+		  <td><span>Drug Name:</span></td>
           <td><p>
             <input type="text" name="drugName" id="drugName" required/>
           </p></td>
         </tr>
         <tr>
-          <td><span  style="font-size: 18px">Price:</span></td>
+          <td><span>Price:</span></td>
          <td><p>
            <input  type="text" name="price" id="price" placeholder="Ex:500" required/>
          </p></td>
         </tr>
         <tr>
-			<td><span  style="font-size: 18px">Quantity:</span></td>
+			<td><span>Quantity:</span></td>
           <td><input  type="number" name="quantity" id="quantity" required></td>
         </tr>
         <tr>
