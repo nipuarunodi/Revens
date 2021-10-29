@@ -18,9 +18,22 @@ if(!isset($_SESSION["id"]))
 	  
   </head>
   <body>
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item"> <a class="nav-link" href="SupplierProfileView.php">My Profile</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="SupplierOrderList.php?id=<?php echo $_SESSION["id"] ?>">My Order List</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="EditSupplierProfile.php?id=<?php echo $_SESSION["id"] ?>">Edit My Profile</a> </li>
+          </ul>
+	      
+    </div>
+  </nav>
 	  <center><h1>Edit Profile</h1></center><br>
 	  <center>
-	<form action="EditSupplierProfile.php?id=<?php echo $_GET['id'];?>" method="post">
+	<form action="EditSupplierProfile.php?id=<?php echo $_SESSION["id"];?>" method="post">
 	  <table border="0">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -28,7 +41,7 @@ if(!isset($_SESSION["id"]))
 		{	
 			die("Cannot connect to DB server");		
 		}
-		$sql ="SELECT * FROM supplier WHERE supplierId ='".$_GET['id']."'";
+		$sql ="SELECT * FROM supplier WHERE supplierId ='".$_SESSION["id"]."'";
 		  
 		$result = mysqli_query($con,$sql);
 		if(mysqli_num_rows($result)> 0)
@@ -84,7 +97,7 @@ if(!isset($_SESSION["id"]))
 						die("Cannot conect to the database server");
 					}
 					
-					$sql = "UPDATE supplier SET supplierCompanyName = '$supplierCompanyName', supplierName = '$supplierName', email = '$email',teleNo = '$teleNo' WHERE supplierId  = '".$_GET['id']."'";
+					$sql = "UPDATE supplier SET supplierCompanyName = '$supplierCompanyName', supplierName = '$supplierName', email = '$email',teleNo = '$teleNo' WHERE supplierId  = '".$_SESSION["id"]."'";
 		
 					mysqli_query($con,$sql);
 		            
