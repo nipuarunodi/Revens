@@ -57,7 +57,7 @@ include "config.php";
 	<script src="../js/bootstrap-4.3.1.js"></script> 
   </head>
   <body>
-  <h2><center style="font-size: 36px; font-weight: inherit;">Stock Update Page</center></h2>
+  <h2><center>Stock Update Page</center></h2>
   <form action="UpdateStocks.php" method="post">
   <br>
   <table width="462" height="274" border="0" align="center">
