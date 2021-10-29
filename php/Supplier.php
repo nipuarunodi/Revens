@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Supplier Details</title>
 </head>	
+	
 <body>
 	
 	<table align="center" border="1px" style="width:900px; line-height: 40px;">
@@ -19,6 +20,8 @@
 			<th>Supplier Company Name</th>
 			<th>&nbsp;</th>
 		</tr>
+		
+		
 	<?php
     $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		

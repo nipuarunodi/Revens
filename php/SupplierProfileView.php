@@ -3,7 +3,7 @@
 
 if(!isset($_SESSION["id"]))
 {
-	header('Location:customerLogin.php');
+	header('Location:supplierLogin.php');
 }
 
  ?>
@@ -12,10 +12,12 @@ if(!isset($_SESSION["id"]))
 <meta charset="utf-8">
 <title>Supplier Profile View</title>
 </head>	
-<body>
+ <body>
+	 
 	<center><h1>My Profile</h1></center><br>
 
 	 <center><table border="0">
+		 
 		<?php
 		 $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		 if(!$con)
@@ -28,28 +30,35 @@ if(!isset($_SESSION["id"]))
 		 {
 			 $row = mysqli_fetch_assoc($result);
 		 ?>
+		 
+		 
 		 <tr>
 		   <td>Company Name</td>
-			 <td> <?php echo $row['supplierCompanyName'];?></td>
+		   <td> <?php echo $row['supplierCompanyName'];?></td>
 		 </tr>
+		 
 		 <tr>
 		   <td>Supplier Name</td>
-			 <td> <?php echo $row['supplierName'];?></td>
-		 </tr>
+		   <td> <?php echo $row['supplierName'];?></td>
+		 </tr> 
+		 
 		 <tr>
 		   <td>Email</td>
-			 <td> <?php echo $row['email'];?></td>
+		   <td> <?php echo $row['email'];?></td>
 		 </tr>
+		 
 		 <tr>
 		   <td>Tele No</td>
-			 <td> <?php echo $row['teleNo'];?></td>
+		   <td> <?php echo $row['teleNo'];?></td>
 		 </tr>
+		 
 		 <a href="SupplierOrderList.php?id=<?php echo $row['supplierId'] ?>">View Orders</a>&nbsp;
 		 <a href="EditSupplierProfile.php?id=<?php echo $row['supplierId'] ?>">Edit Profile</a>
 		 
 		 <?php
 		 }
 		 ?>
+		 
 		</table>
 		 </center>
 	</body>

@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <title>Supplier Details</title>
 </head>	
-<body>
+	
+ <body>
 	
 	<table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
@@ -17,9 +18,10 @@
 			<th>Order Date</th>
 			<th>Order Details</th>
 			<th>Order Status</th>
-			<th>Total Amount</th>
-			
+			<th>Total Amount</th>	
 		</tr>
+		
+		
 	<?php
 	$supplierId = $_GET['id'];
     $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -52,5 +54,5 @@
 		?>
 	</table>
 	
-	</body>
+ </body>
 </html>
