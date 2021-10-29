@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
 </head>
 
 <body>
