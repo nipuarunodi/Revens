@@ -58,7 +58,13 @@ include "config.php";
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Update customer stocks</title>
+    <title>Update Customer</title>
+	  
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+	  
   </head>
   <body>
    <form action="EditCustomer.php?id=<?php echo $_GET['id']?>" method="post" align="center">
@@ -94,8 +100,8 @@ include "config.php";
            <div class="input-group">
              <input type="submit" name="update" id="update" value="Update" onClick="validateAll()"/>
           </div>
-</form>
-</body>
+      </form>
+    </body>
 <script type="text/javascript">
 
 		function validateUserName(str)
