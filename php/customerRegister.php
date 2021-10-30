@@ -80,7 +80,7 @@
         
 
             <div class="input-group">
-                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
+                <input class="badge-primary" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
             </div>
 	   </form>
     </div>
