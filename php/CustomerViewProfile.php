@@ -78,9 +78,12 @@ if(!isset($_SESSION["id"]))
 		</table>
 	<br>
 	<center>
-	<a href="AddOrder.php?id=<?php echo $row['customerId']; ?>">Add order</a>
-	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>">View Order History</a>
-	<a  href="EditCustomer.php?id=<?php echo $row['customerId']; ?>">Edit User Details</a>
-	</center>
+	<a href="AddOrder.php?id=<?php echo $row['customerId']; ?>"</a>
+	<input name=AddOrder type="button" class="badge-danger"  value="Add Order" >
+	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>"</a>
+	<input name=ViewOrderHistory type="button" class="badge-primary"  value="View Order History" >
+	<a  href="EditCustomer.php?id=<?php echo $row['customerId']; ?>"</a>
+	<input name=EditUserDetails type="button" class="badge-success"  value="Edit User Details" >
+</center>
 </body>
 </html>
