@@ -49,7 +49,7 @@ include "config.php";
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Update Stocks</title>
+    <title>JayaSiri Pharmacy Update Stocks</title>
 	  
   <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
 	<script src="../js/jquery-3.3.1.min.js"></script>
@@ -57,7 +57,28 @@ include "config.php";
 	<script src="../js/bootstrap-4.3.1.js"></script> 
   </head>
   <body>
-  <h2><center>Stock Update Page</center></h2>
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item"> <a class="nav-link" href="OrderList.php">Customer Orders</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="Supplier.php">Supplier</a> </li>
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Stocks </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="ViewStocks.php">View Stocks</a> <a class="dropdown-item" href="StockManagement.php">Add Stocks</a>
+			</li>
+	        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Payments </a>
+	          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="Payments.php">Payments</a> <a class="dropdown-item" href="AddPayments.php">Add Payment</a>
+			  </li>
+          </ul>
+	      
+    </div>
+  </nav>
+	  <br>
+	  <br>
+	  <br>
+  <h2><center>Update Stocks</center></h2>
   <form action="UpdateStocks.php" method="post">
   <br>
   <table align="center" border="1px" style="width:600px; line-height: 40px;">
@@ -80,7 +101,7 @@ include "config.php";
 		          <td><input type="number" name="quantity" id="quantity" value="<?php echo $quantity; ?>" required/></td>
 	            </tr>
 		        <tr>
-		          <td colspan="2"><input type="submit" name="update" value="Update"  onClick="validateAll()"/></td>
+		          <td colspan="2"><input name="update" type="submit" class="badge-danger"  onClick="validateAll()" value="Update"/></td>
 	            </tr>
           </tbody>
       </table>

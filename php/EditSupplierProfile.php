@@ -31,6 +31,9 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Edit Profile</h1></center><br>
 	  <center>
 	<form action="EditSupplierProfile.php?id=<?php echo $_SESSION["id"];?>" method="post">
@@ -74,7 +77,7 @@ if(!isset($_SESSION["id"]))
 		</tr>
 		  
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update" onClick="validateAll()"></td>
+			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update"></td>
 		  </tr>
 		  <?php
 		}

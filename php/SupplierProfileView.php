@@ -38,6 +38,9 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	<br>
+	  <br>
+	  <br>
 >>>>>>> origin/master
 	<center><h1>My Profile</h1></center><br>
 
