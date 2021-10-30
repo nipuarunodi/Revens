@@ -77,7 +77,7 @@ if(!isset($_SESSION["id"]))
 		</tr>
 		  
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update" onClick="validateAll()"></td>
+			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update"></td>
 		  </tr>
 		  <?php
 		}
