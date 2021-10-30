@@ -85,7 +85,7 @@
 		  	</tr>
 		</table></center>
 	  <br>
-	  <center><a href="AddPayments.php">Add Another Payment</a></center>
+	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="badge-warning"  value="Add Another Payment" ></a></center>
 	  <br>
 	  <table border="0" width="100%">
 	  <tr>
