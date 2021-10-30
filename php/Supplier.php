@@ -16,10 +16,10 @@
   </head>	
 	
 <body>
-<<<<<<< HEAD
+
 	
 	
-=======
+
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">

@@ -20,10 +20,10 @@ if(!isset($_SESSION["id"]))
 	<script src="../js/bootstrap-4.3.1.js"></script>
 	  
   </head>
-<<<<<<< HEAD
+
  <body>
 	 
-=======
+
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
@@ -41,7 +41,7 @@ if(!isset($_SESSION["id"]))
 	<br>
 	  <br>
 	  <br>
->>>>>>> origin/master
+
 	<center><h1>My Profile</h1></center><br>
 
 	<table class="tsble table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
