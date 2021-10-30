@@ -51,7 +51,7 @@ include "config.php";
   </center></h2>
         <form action="StockManagement.php" method="POST">
         <p><br></p>
-	     <table width="462" height="305" border="0" align="center">
+	    <table align="center" border="1px" style="width:600px; line-height: 40px;">
         <tbody>
         <tr>
 		  <div>

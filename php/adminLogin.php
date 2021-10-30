@@ -7,7 +7,7 @@
 
 <body>
 <form id="form1" name="form1" method="post">
-  <table align="center" width="417" height="295" border="1">
+ <table align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
         <td height="53" colspan="2" align="center"><h1>ADMIN LOGIN</h1></td>

@@ -20,13 +20,13 @@ if(!isset($_SESSION["id"]))
 	<script src="../js/bootstrap-4.3.1.js"></script>
 </head>
 <body>
-    <table width="100%">
+    <table align="center" border="1px" style="width:600px; line-height: 40px;">
         <tbody>
             <tr>
                 <td>&nbsp;</td>
                 <td colspan="2">
                     <form action="AddOrder.php" method="post" enctype="multipart/form-data">
-                    <table class="loginTable" style="padding: 20px" width="508" align="left">
+                    <table align="center" border="1px" style="width:600px; line-height: 40px;">
                     <tr>
                         <td height="59" colspan="2" bgcolor="#FFFFFF">
                             <h1 class="loginHeader">Add Order</h1>

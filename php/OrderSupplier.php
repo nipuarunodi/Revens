@@ -11,6 +11,8 @@
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
 	
+	
+	
 <script type="text/javascript">
 
 function validateOrderDetails()
@@ -67,7 +69,7 @@ function validate()
 	
 <form action="OrderSupplier.php?id=<?php echo $_GET['id'];?>" method="post">
 	
-<table width="450" height="510" border="1" align="center">
+<table align="center" border="1px" style="width:600px; line-height: 40px;">
 	
   <tbody>
 	  
@@ -76,17 +78,17 @@ function validate()
     </tr>
 	  
     <tr>
-      <td><h2>Supplier Id</h2></td>
+      <td>Supplier Id</td>
       <td><input name="txtSupplierId" type="text" required="required" id="txtSupplierId" value="<?php echo $_GET['id'];?>"></td>
     </tr>
 	  
 	<tr>
-      <td><h2>Order Details</h2></td>
+      <td>Order Details</td>
       <td><textarea name="textarea" required="required" id="textarea"></textarea></td>
     </tr>
 	  
 	<tr>
-      <td><h2>Order Status</h2></td>
+      <td>Order Status</td>
       <td><input name="txtOrderStatus" type="text" required="required" id="txtOrderStatus" value="Pending"></td>
     </tr>
 	  
@@ -100,14 +102,15 @@ function validate()
 	  
   </tbody>
 </table>
-</form>&nbsp;
+</form>
+	<br>
 	
 	
 
 	
 <table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
-			<th colspan="7"><h2>Supplier Orders View Here!!!</h2></th>
+			<th colspan="7"><h1>Supplier Orders View Here!!!</h1></th>
 		</tr>
 		
 		<tr>

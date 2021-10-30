@@ -13,7 +13,7 @@
 <body>
 <form id="form1" name="form1" method="post">
   <p>&nbsp;</p>
-  <table width="544" height="300" border="0">
+ <table align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
 		<?php
         
@@ -124,7 +124,7 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <table width="955" border="0">
+  <table align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
         <td width="247"><input type="submit" name="confirm"

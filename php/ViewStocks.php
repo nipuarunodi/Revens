@@ -34,7 +34,7 @@ $result = $conn->query($sql);
    <input id="myInput" type="text"placeholder="Search.."></p>
    <p><p>
      <button onclick="sortTable()">Sort Table</button></p><br></p>
-<table width="92%" border="0" align="center" >
+<table align="center" border="1px" style="width:600px; line-height: 40px;">
 	<thead>
 		<tr>
 		<th width="165" height="46"  >Did</th>

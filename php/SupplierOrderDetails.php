@@ -80,7 +80,7 @@ if(!isset($_SESSION["id"]))
   </nav>
 	  <center><h1>Order Details</h1></center><br>
 	<center><form action="SupplierOrderDetails.php?id=<?php echo $_GET['id']?>" method="post">
-		<table border="0">
+		<table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		if(!$con)

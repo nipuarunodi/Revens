@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<center><table width="60%" border="0">
+	<table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
 			<?php
 				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -79,7 +79,7 @@
 		</tr>
 </table></center>
 <form id="form1" name="form1" method="post">
-  <table width="782" height="80" border="0">
+  <table align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
         <td width="166">OrderID </td>

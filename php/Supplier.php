@@ -10,14 +10,16 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	
+	
 	  
   </head>	
 	
 <body>
 	
-	<table align="center" border="1px" style="width:900px; line-height: 40px;">
+	<table align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
-			<th colspan="7"><h2>Supplier Detail Gathering Venue</h2></th>
+			<th colspan="7"><h1>Supplier Detail Gathering Venue</h1></th>
 		</tr>
 		
 		<tr>

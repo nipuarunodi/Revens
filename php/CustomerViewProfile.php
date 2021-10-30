@@ -23,7 +23,7 @@ if(!isset($_SESSION["id"]))
 <body>
 	<h1 align="center">My Profile</h1>
 	<br>
-	 <table border="0" align="center">
+	 <table align="center" border="1px" style="width:600px; line-height: 40px;">
 
 		<?php
 		 $con = mysqli_connect("localhost","root","","jayasiripharmacydb");

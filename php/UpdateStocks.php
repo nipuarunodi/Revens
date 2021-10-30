@@ -60,7 +60,7 @@ include "config.php";
   <h2><center>Stock Update Page</center></h2>
   <form action="UpdateStocks.php" method="post">
   <br>
-  <table width="462" height="274" border="0" align="center">
+  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 		      <tbody>
 		        <tr>
 		          <td width="189" height="54">Drug Code:</td>

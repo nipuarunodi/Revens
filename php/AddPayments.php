@@ -5,12 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Untitled Document</title>
+	 
     
 	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
 	 <script type="text/javascript">
+		 
+	
 	  
 	  function validatePaymentDetails()
 		{
@@ -58,7 +61,7 @@
 	  
 	  <center><h1>Add Other Payments</h1></center><br>
 	  <center><form action="AddPayments.php" method="post">
-	  <table border="0">
+	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 		  <tr>
 		  <td>Payment Details</td>
 		  <td><input type="text" id="txtPaymentDetails" name="txtPaymentDetails"></td>
@@ -96,7 +99,7 @@
 	  </form></center>
 	  <br>
 	  <center>
-	  <table border="1">
+	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 	  	<tr>
 			<th>Payment ID</th>
 			<th>Payment Details</th>

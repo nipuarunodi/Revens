@@ -18,7 +18,7 @@
   <body>
 	  
 	  <center><h1>Payment Management</h1></center><br>
-	  <center><table border="1" width="50%">
+	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 			<tr>
 		  		<th width="33%">Income&nbsp;-</th>
 				<th width="33%">Expenses</th>
@@ -73,10 +73,10 @@
 	  <br>
 	  <center><a href="AddPayments.php">Add Another Payment</a></center>
 	  <br>
-	  <table border="0" width="100%">
+	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 	  <tr>
 		<td width="50%">
-		<table border="1" width="99%">
+		<table align="center" border="1px" style="width:600px; line-height: 40px;">
 			<tr>
 			<th>Order ID</th>
 			<th>Customer ID</th>

@@ -22,7 +22,7 @@ if(!isset($_SESSION["id"]))
 
 <body>
 	<h1 align="center">Order History</h1>
-	<table border = 1 align="center">
+	<table align="center" border="1px" style="width:600px; line-height: 40px;">
 	 <tbody>
       <tr>
         <td width="200">OrderID </td>
