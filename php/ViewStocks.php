@@ -18,7 +18,7 @@ $result = $conn->query($sql);
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>View Stocks</title>
+    <title>JayaSiri Pharmacy View Stocks</title>
 	  
     <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
 	<script src="../js/jquery-3.3.1.min.js"></script>
@@ -48,13 +48,14 @@ $result = $conn->query($sql);
 	  <br>
 	  <br>
 	<center>
-	<h1>View Stocks Page</h1>
+	<h1>View Stocks</h1>
 	</center>
 	<p><div class="container">
 	  <h4>Filter the stocks details:</h4><p>
    <input id="myInput" type="text"placeholder="Search.."></p>
-   <p><p>
-     <button onclick="sortTable()">Sort Table</button></p><br></p>
+  <p>&nbsp;</p>
+   <p>
+  <button class="badge-success" onclick="sortTable()">Sort Table</button></p><br></p>
 <table width="92%" border="0" align="center" >
 	<thead>
 		<tr>
@@ -79,7 +80,7 @@ $result = $conn->query($sql);
 					<td><?php echo $row['drugName']; ?></td>
 					<td><?php echo $row['price']; ?></td>
 					<td><?php echo $row['quantity']; ?></td>
-					<td width="141"><p><a  href="UpdateStocks.php?id=<?php echo $row['Did']; ?>">Update</a>&nbsp;<a href="DeleteStocks.php?id=<?php echo $row['Did']; ?>">Delete</a></p></td>
+					<td width="141"><p><a  href="UpdateStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=UpdateStocks type="button" class="badge-danger"  value="Update" >&nbsp;<a href="DeleteStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=DeleteStocks type="button" class="badge-primary"  value="Delete" ></p></td>
 					</tr>	
 					
 		<?php		
@@ -110,9 +111,9 @@ function sortTable() {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[0];
       y = rows[i + 1].getElementsByTagName("TD")[0];
-      //check if the two rows should switch place:
+      
       if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-        //if so, mark as a switch and break the loop:
+       
         shouldSwitch = true;
         break;
       }
