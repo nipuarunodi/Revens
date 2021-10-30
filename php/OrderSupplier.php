@@ -113,8 +113,8 @@ function validate()
      <tr>
       <td height="70">&nbsp;</td>
 		 
-      <td><input type="submit" name="btnsubmit" id="btnsubmit" value="Add"onClick="validate()"> 
-	  <input type="reset" name="Reset" id="Reset" value="Reset">
+      <td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit"onClick="validate()" value="Add"> 
+	  <input name="Reset" type="reset" class="badge-secondary" id="Reset" value="Reset">
 	  </td>
     </tr>
 	  
