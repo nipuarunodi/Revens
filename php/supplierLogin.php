@@ -14,6 +14,22 @@
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	<img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item active"> <a class="nav-link" href="supplierLogin.php">Login</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="supplierRegister.php">Register</a> </li>
+          </ul>
+	      
+    </div>    
+  </nav>
+	<br>
+	<br>
+	<br>
+	
 	<center>
 	<form action="supplierLogin.php" method="post">
 	 <h1 class="form-heading"> Sign In </h1>

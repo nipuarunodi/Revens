@@ -31,6 +31,9 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Edit Profile</h1></center><br>
 	  <center>
 	<form action="EditSupplierProfile.php?id=<?php echo $_SESSION["id"];?>" method="post">

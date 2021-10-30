@@ -6,6 +6,15 @@
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    
+  </nav>
+	<br>
+	<br>
+	<br>
 <form id="form1" name="form1" method="post">
   <table align="center" width="417" height="295" border="1">
     <tbody>

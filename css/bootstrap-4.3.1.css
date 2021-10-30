@@ -4200,7 +4200,7 @@ input[type="button"].btn-block {
 
 .navbar-nav .dropdown-menu {
   position: static;
-  float: none;
+  float:none;
 }
 
 .navbar-text {
@@ -8333,7 +8333,7 @@ button.bg-dark:focus {
 
 .mr-auto,
 .mx-auto {
-  margin-right: auto !important;
+  margin-right:auto !important;
 }
 
 .mb-auto,

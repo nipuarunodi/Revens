@@ -78,6 +78,9 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Order Details</h1></center><br>
 	<center><form action="SupplierOrderDetails.php?id=<?php echo $_GET['id']?>" method="post">
 		<table border="0">
