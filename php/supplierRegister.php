@@ -83,7 +83,7 @@
         
 
             <div class="input-group">
-                <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
+                <input class="btn-info" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
             </div>
 		</center>
 	   </form>
