@@ -1,9 +1,16 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Admin Login</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin Login</title>
+	  
+    <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+   </head>
 
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
@@ -33,7 +40,7 @@
       </tr>
       <tr>
         <td height="41"><center><p>&nbsp;</p></center></td>
-        <td><input type="submit" name="submit" id="" value="Login">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
+        <td><input name="submit" type="submit" class="badge-primary" id="" value="Login">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
       </tr>
     </tbody>
   </table>
