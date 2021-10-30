@@ -73,7 +73,7 @@
 	       <br>
 		   <br>
             <div class="input-group">
-                <input class="input-btn" type="submit" name="btnSignIn" value="Sign In">
+                <input class="badge-primary" type="submit" name="btnSignIn" value="Sign In">
             </div>
 	</form>
 </body>
