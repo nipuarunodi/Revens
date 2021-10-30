@@ -38,13 +38,13 @@ if(!isset($_SESSION["id"]))
 	  <br>
 	<center><h1>My Order List</h1></center><br>
 	  <center>
-	 <table align="center" border="1px" style="width:600px; line-height: 40px;">
+	 <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		  <tr>
-		  	<th>Order ID</th>
-			<th>Order Date</th>
-			<th>Order Details</th>
-			<th>Order Status</th>
-			<th>Total Amount</th>
+		  	<th scope="col">Order ID</th>
+			<th scope="col">Order Date</th>
+			<th scope="col">Order Details</th>
+			<th scope="col">Order Status</th>
+			<th scope="col">Total Amount</th>
 			<th>&nbsp;</th>
 		  </tr>
 		  <?php

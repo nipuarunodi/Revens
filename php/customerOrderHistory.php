@@ -39,7 +39,7 @@ if(!isset($_SESSION["id"]))
 	<br>
 	<br>
 	<h1 align="center">Order History</h1>
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 	 <tbody>
       <tr>
         <td width="200">OrderID </td>

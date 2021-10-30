@@ -15,8 +15,8 @@
 	  
 <<<<<<< HEAD
 	  <center><h1>Payment Management</h1></center><br>
-	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
-=======
+	  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
+
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
@@ -97,9 +97,9 @@
 		<td width="50%">
 		<table align="center" border="1px" style="width:600px; line-height: 40px;">
 			<tr>
-			<th>Order ID</th>
-			<th>Customer ID</th>
-			<th>Amount</th>
+			<th scope="col">Order ID</th>
+			<th scope="col">Customer ID</th>
+			<th scope="col">Amount</th>
 		    </tr>
 			<?php
 				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -130,9 +130,9 @@
 		<td width="50%">
 		<table border="1" width="99%">
 		<tr>
-			<th>Order ID</th>
-			<th>Supplier ID</th>
-			<th>Amount</th>
+			<th scope="col">Order ID</th>
+			<th scope="col">Supplier ID</th>
+			<th scope="col">Amount</th>
 		</tr>
 		<?php
 				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");

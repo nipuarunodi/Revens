@@ -44,7 +44,7 @@ if(!isset($_SESSION["id"]))
 >>>>>>> origin/master
 	<center><h1>My Profile</h1></center><br>
 
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="tsble table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
 		 
 		<?php
 		 $con = mysqli_connect("localhost","root","","jayasiripharmacydb");

@@ -34,7 +34,7 @@
 	  <br>
 <form id="form1" name="form1" method="post">
   <p>&nbsp;</p>
- <table align="center" border="1px" style="width:600px; line-height: 40px;">
+ <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
 		<?php
         

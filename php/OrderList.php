@@ -13,7 +13,7 @@
 <body>
 <<<<<<< HEAD
 	<table align="center" border="1px" style="width:600px; line-height: 40px;">
-=======
+
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
@@ -35,8 +35,8 @@
 	  <br>
 	  <br>
 	  <br>
-	<center><table width="60%" border="0">
->>>>>>> origin/master
+	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+
 		<tr>
 			<?php
 				$con = mysqli_connect("localhost","root","","jayasiripharmacydb");

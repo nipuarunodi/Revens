@@ -23,7 +23,7 @@
 	<br>
 	<br>
 <form id="form1" name="form1" method="post">
- <table align="center" border="1px" style="width:600px; line-height: 40px;">
+ <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
         <td height="53" colspan="2" align="center"><h1>ADMIN LOGIN</h1></td>

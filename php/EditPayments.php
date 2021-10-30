@@ -79,7 +79,7 @@
 	  <center><h1>Edit Payments</h1></center><br>
 	  <center>
 	<form action="EditPayments.php?id=<?php echo $_GET['id'];?>" method="post">
-	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
+	  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		if(!$con)

@@ -21,8 +21,8 @@ if(!isset($_SESSION["id"]))
 </head>
 <body>
 <<<<<<< HEAD
-    <table align="center" border="1px" style="width:600px; line-height: 40px;">
-=======
+    <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
+
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
@@ -41,7 +41,7 @@ if(!isset($_SESSION["id"]))
 	<br>
 	<br>
     <table width="100%">
->>>>>>> origin/master
+
         <tbody>
             <tr>
                 <td>&nbsp;</td>

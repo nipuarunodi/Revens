@@ -56,21 +56,21 @@ $result = $conn->query($sql);
 <<<<<<< HEAD
    <p><p>
      <button onclick="sortTable()">Sort Table</button></p><br></p>
-<table align="center" border="1px" style="width:600px; line-height: 40px;">
-=======
+<table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
+
   <p>&nbsp;</p>
    <p>
   <button class="badge-success" onclick="sortTable()">Sort Table</button></p><br></p>
-<table width="92%" border="0" align="center" >
->>>>>>> origin/master
+<table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
+
 	<thead>
 		<tr>
-		<th width="165" height="46"  >Did</th>
-		<th width="166" >Drug Code</th>
-		<th width="176" >Drug Name</th>
-		<th width="176" >Price</th>
-		<th width="160" >Quantity</th>
-		<th width="141" >Action</th>
+		<th scope="col">Did</th>
+		<th scope="col" >Drug Code</th>
+		<th scope="col" >Drug Name</th>
+		<th scope="col" >Price</th>
+		<th scope="col" >Quantity</th>
+		<th scope="col" >Action</th>
 	</tr>
 	</thead>
 	<tbody id="myTable">	

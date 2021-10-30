@@ -38,18 +38,18 @@
 	  <br>
 	  <br>
 	  <br>
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
 			<th colspan="7"><h1>Supplier Orders View</h1></th>
 		</tr>
 		
 		<tr>
-			<th>Order Id</th>
-			<th>Supplier Id</th>
-			<th>Order Date</th>
-			<th>Order Details</th>
-			<th>Order Status</th>
-			<th>Total Amount</th>	
+			<th scope="col">Order Id</th>
+			<th  scope="col">Supplier Id</th>
+			<th  scope="col">Order Date</th>
+			<th  scope="col">Order Details</th>
+			<th  scope="col">Order Status</th>
+			<th  scope="col">Total Amount</th>	
 		</tr>
 		
 		

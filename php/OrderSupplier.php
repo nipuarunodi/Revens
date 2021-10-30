@@ -89,7 +89,7 @@ function validate()
 	  <br>
 <form action="OrderSupplier.php?id=<?php echo $_GET['id'];?>" method="post">
 	
-<table align="center" border="1px" style="width:600px; line-height: 40px;">
+<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 	
   <tbody>
 	  
@@ -128,16 +128,16 @@ function validate()
 	
 
 	
-<table align="center" border="1px" style="width:600px; line-height: 40px;">
+<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<tr>
 			<th colspan="7"><h1>Supplier Orders View Here!!!</h1></th>
 		</tr>
 		
 		<tr>
-			<th>Order Id</th>
-			<th>Supplier Id</th>
-			<th>Order Details</th>
-			<th>Order Status</th>
+			<th scope="col">Order Id</th>
+			<th scope="col">Supplier Id</th>
+			<th scope="col">Order Details</th>
+			<th scope="col">Order Status</th>
 		</tr>
 		
 		

@@ -18,7 +18,7 @@
 <body>
 <<<<<<< HEAD
 	
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	
 =======
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
@@ -41,18 +41,18 @@
 	  <br>
 	  <br>
 	  <br>
-	<table align="center" border="1px" style="width:900px; line-height: 40px;">
->>>>>>> origin/master
+	<table class="table table-striped" align="center" border="1px" style="width:900px; line-height: 40px;">
+
 		<tr>
 			<th colspan="7"><h1>Supplier Detail Gathering Venue</h1></th>
 		</tr>
 		
 		<tr>
-			<th>Supplier Id</th>
-			<th>Email</th>
-			<th>Tele No</th>
-			<th>Supplier Name</th>
-			<th>Supplier Company Name</th>
+			<th scope="col">Supplier Id</th>
+			<th scope="col">Email</th>
+			<th scope="col">Tele No</th>
+			<th scope="col">Supplier Name</th>
+			<th scope="col">Supplier Company Name</th>
 			<th>&nbsp;</th>
 		</tr>
 		

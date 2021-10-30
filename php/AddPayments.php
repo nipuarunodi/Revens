@@ -81,7 +81,7 @@
 	  <br>
 	  <center><h1>Add Other Payments</h1></center><br>
 	  <center><form action="AddPayments.php" method="post">
-	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
+	  <table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
 		  <tr>
 		  <td>Payment Details</td>
 		  <td><input type="text" id="txtPaymentDetails" name="txtPaymentDetails"></td>
