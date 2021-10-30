@@ -12,7 +12,7 @@
 
 <body>
 <<<<<<< HEAD
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
@@ -35,7 +35,7 @@
 	  <br>
 	  <br>
 	  <br>
-	<table align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 
 		<tr>
 			<?php
