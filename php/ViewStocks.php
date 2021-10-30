@@ -91,6 +91,9 @@ $result = $conn->query($sql);
         </tbody>
    </table>
 	  
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
 <script>
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
@@ -124,6 +127,6 @@ function sortTable() {
     }
   }
 }
- </script>
+  </script>
 </body>
 </html>
