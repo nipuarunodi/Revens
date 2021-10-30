@@ -107,7 +107,7 @@
 		  </tr>
 		  <tr>
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Edit" onClick="validateAll()">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
+			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
 		  </tr>
 		  <?php
 		}
