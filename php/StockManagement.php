@@ -78,10 +78,10 @@ include "config.php";
         </tr>
         <tr>
           <td height="123" colspan="2"><p>&nbsp;
-            <input name="submit" type="submit"  onClick="validateAll()" value="Add"/>&nbsp;
-             <input name="reset" type="reset" value="Reset">
+            <input name="submit" type="submit" class="bg-danger"  onClick="validateAll()" value="Add"/>&nbsp;
+             <input name="reset" type="reset" class="bg-info" value="Reset">
             <a href="ViewStocks.php">&nbsp;
-            <input name=ViewStocks type="button"  value="View" >
+            <input name=ViewStocks type="button" class="bg-warning"  value="View" >
             </a></p>
           </td>
         </tr>
