@@ -49,7 +49,7 @@ include "config.php";
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Update Stocks</title>
+    <title>JayaSiri Pharmacy Update Stocks</title>
 	  
   <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
 	<script src="../js/jquery-3.3.1.min.js"></script>
@@ -78,7 +78,7 @@ include "config.php";
 	  <br>
 	  <br>
 	  <br>
-  <h2><center>Stock Update Page</center></h2>
+  <h2><center>Update Stocks</center></h2>
   <form action="UpdateStocks.php" method="post">
   <br>
   <table width="462" height="274" border="0" align="center">
@@ -101,7 +101,7 @@ include "config.php";
 		          <td><input type="number" name="quantity" id="quantity" value="<?php echo $quantity; ?>" required/></td>
 	            </tr>
 		        <tr>
-		          <td colspan="2"><input type="submit" name="update" value="Update"  onClick="validateAll()"/></td>
+		          <td colspan="2"><input name="update" type="submit" class="badge-danger"  onClick="validateAll()" value="Update"/></td>
 	            </tr>
           </tbody>
       </table>
