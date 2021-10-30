@@ -38,7 +38,7 @@ include "config.php";
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stock Management</title>
+    <title>JayaSiri Pharmacy Stock Management</title>
 	  
     <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
 	<script src="../js/jquery-3.3.1.min.js"></script>
@@ -72,37 +72,38 @@ include "config.php";
   </center></h2>
         <form action="StockManagement.php" method="POST">
         <p><br></p>
-	     <table width="462" height="305" border="0" align="center">
+	     <table width="462" height="282" border="0" align="center">
         <tbody>
         <tr>
 		  <div>
-          <td><span>Drug Code:</span></td>
+          <td height="38"><span>Drug Code:</span></td>
           <td><p>
             <input type="text" name="drugCode" id="drugCode" placeholder="DCNXX-XX-XX" required/>
           </p></td></div>
         </tr>
         <tr>
-		  <td><span>Drug Name:</span></td>
+		  <td height="38"><span>Drug Name:</span></td>
           <td><p>
             <input type="text" name="drugName" id="drugName" required/>
           </p></td>
         </tr>
         <tr>
-          <td><span>Price:</span></td>
+          <td height="38"><span>Price:</span></td>
          <td><p>
            <input  type="text" name="price" id="price" placeholder="Ex:500" required/>
          </p></td>
         </tr>
         <tr>
-			<td><span>Quantity:</span></td>
+			<td height="33"><span>Quantity:</span></td>
           <td><input  type="number" name="quantity" id="quantity" required></td>
         </tr>
         <tr>
           <td height="123" colspan="2"><p>&nbsp;
-            <input name="submit" type="submit" class="bg-danger"  onClick="validateAll()" value="Add"/>&nbsp;
-             <input name="reset" type="reset" class="bg-info" value="Reset">
-            <a href="ViewStocks.php">&nbsp;
-            <input name=ViewStocks type="button" class="bg-warning"  value="View" >
+            <input name="submit" type="submit" class="badge-danger"  onClick="validateAll()" value="Add"/>
+            &nbsp; 
+             <input name="reset" type="reset" class="badge-secondary" value="Reset">
+            <a href="ViewStocks.php"> &nbsp;
+            <input name=ViewStocks type="button" class="badge-primary"  value="View" >
             </a></p>
           </td>
         </tr>
