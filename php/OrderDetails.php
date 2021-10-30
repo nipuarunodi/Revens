@@ -149,10 +149,10 @@
     <tbody>
       <tr>
         <td width="247"><input type="submit" name="confirm"
-                class="button" value="Confirm" /></td>
+                class="badge-success" value="Confirm" /></td>
         <td width="247"><input type="submit" name="reject"
-                class="button" value="Reject" /></td>
-        <td width="244"><input type="button" name="button3" id="button3" value="Back"></td>
+                class="badge-danger" value="Reject" /></td>
+        <td width="244"><input name="button3" type="button" class="badge-secondary" id="button3" value="Back"></td>
       </tr>
     </tbody>
   </table>
