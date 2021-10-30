@@ -72,7 +72,7 @@
 				<td><?php echo $row['teleNo']; ?></td>
 				<td><?php echo $row['supplierName']; ?></td>
 				<td><?php echo $row['supplierCompanyName']; ?></td>
-				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>">Order</a>&nbsp;/&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>">Supplier Orders View</a>&nbsp;/&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>">Delete</a></td>
+				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Order type="button" class="badge-success"  value="Order" >&nbsp;&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>"</a><input name=SupplierOrdersView type="button" class="badge-primary"  value="Supplier Orders View" >&nbsp;&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Delete type="button" class="badge-secondary"  value="Delete" ></td>
 			</tr>
 		<?php
 		    }
