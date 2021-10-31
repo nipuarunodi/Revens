@@ -65,8 +65,8 @@ if(!isset($_SESSION["id"]))
                     <tr>
                         <td height="39" class="inputFields"><label>Delivery Type</label></td>
                         <td>
-                            <input type="radio" name="delivery" value="Delivery"/>Delivery
-                            <input type="radio" name="delivery" value="PickUp"/>PickUp
+                            <input type="radio" name="delivery" value="Delivery" required="required"/>Delivery
+                            <input type="radio" name="delivery" value="PickUp" required="required"/>PickUp
                         </td>
                         </tr>
                         <tr>
