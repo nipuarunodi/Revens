@@ -121,11 +121,11 @@ if(!isset($_SESSION["id"]))
 			</tr>
 			<tr>
 			<td>Order Amount</td>
-			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>" onClick="validateAll()"></td>
+			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>" ></td>
 			</tr>
 			<tr>
 			<td>&nbsp;</td>
-			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update"></td>
+			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update" onClick="validateAll()"></td>
 			</tr>
 		<?php
 		}
