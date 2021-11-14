@@ -12,12 +12,7 @@
 	  
   </head>
   <body style="padding-top: 70px">
-	  
-<<<<<<< HEAD
-	  <center><h1>Payment Management</h1></center><br>
-	  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
-
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
 	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
@@ -35,9 +30,13 @@
 	      
     </div>
   </nav>
-<center><h1>Payment Management</h1></center><br>
-	  <center><table border="1" width="50%">
->>>>>>> origin/master
+  <center>
+  <h1>Payment Management</h1></center><br>
+	  <center>
+	  <table class="table table-striped" border="1px" style="width:600px; line-height: 40px;">
+
+  
+	  
 			<tr>
 		  		<th width="33%">Income&nbsp;-</th>
 				<th width="33%">Expenses</th>
@@ -88,10 +87,12 @@
 				?>
 				<td><?php echo $income-$expenses ?></td>
 		  	</tr>
-		</table></center>
+		</table>
+		  </center>
 	  <br>
 	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="badge-warning"  value="Add Another Payment" ></a></center>
 	  <br>
+		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Customer Payment Report Generate"></a></center>
 	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 	  <tr>
 		<td width="50%">
