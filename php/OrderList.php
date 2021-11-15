@@ -142,6 +142,10 @@
 	    ?>	
     </tbody>
   </table>
+	<p>&nbsp;</p>
+	<div class="text-center">
+        <a href="CustomerOrderListPrint.php" class="btn btn-primary">Print</a>
+    </div>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
