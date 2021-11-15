@@ -1,0 +1,18 @@
+.container{
+	margin-top: 8%;
+}
+
+.inner{
+	overflow: hidden;
+}
+
+.inner{
+	transition: all 1.5s ease;
+}
+
+.inner:hover img{
+	transform: scale(1.5);
+}
+.btn btn-success{
+	
+}
