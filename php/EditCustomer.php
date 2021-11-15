@@ -103,9 +103,12 @@ include "config.php";
             </div>
             <div class="input-group">
               <p>
-                <label>Contact Address</label>
-                <input type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
-              </p>
+                <p>
+                  <label>Contact Address</label>
+                  <input type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
+                  </p>
+                </p>
+                <p>&nbsp;</p>
             </div>
 	        <div>
               <p>
