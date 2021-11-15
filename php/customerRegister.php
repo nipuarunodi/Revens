@@ -10,6 +10,7 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	<link rel="stylesheet" href = "../css/Form.css">
 </head>
 
 <body>
@@ -26,7 +27,8 @@
             </div>
             <div class="input-group">
               <p>
-                <label class="input-label">Email Address</label>
+                <label class="input-label">Email Address<br>
+                </label>
                 <input class="input-text" type="text" id="txtEmail" name="email" placeholder="Enter email address...">
               </p>
             </div>
@@ -67,6 +69,8 @@
             <div class="input-group">
                 <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
             </div>
+			<a class ="alredy" href=customerLogin.php>You alredy have an account?Login here</a>
+
 	   </form>
     </div>
 </div>

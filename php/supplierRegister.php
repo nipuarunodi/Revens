@@ -70,6 +70,7 @@
             <div class="input-group">
                 <input class="input-btn" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
             </div>
+		<a class ="alredy" href=supplierLogin.php>You alredy have an account?Login here</a>
 		</center>
 	   </form>
     </div>

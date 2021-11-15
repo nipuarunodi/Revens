@@ -11,11 +11,13 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	<link rel="stylesheet" href = "../css/Form.css">
 </head>
 
 <body>
 	<center>
 	<form action="supplierLogin.php" method="post">
+    <div class="signup-box">
 	 <h1 class="form-heading"> Sign In </h1>
             
             <div class="input-group">
@@ -59,9 +61,9 @@
 	       <br>
             <div class="input-group">
                 <input class="input-btn" type="submit" name="btnSignIn" value="Sign In">
-                <input class="input-btn" type="button" id="btnSignUp" value="Sign Up">
             </div>
 		</center>
+		</div>
 	</form>
 </body>
 </html>
