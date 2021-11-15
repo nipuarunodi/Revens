@@ -71,8 +71,7 @@ include "config.php";
   <p>Manage Stocks</p>
   </center></h2>
         <form action="StockManagement.php" method="POST">
-        <p><br></p>
-<<<<<<< HEAD
+			<p><br></p>
 	    
 
 	     <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
