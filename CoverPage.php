@@ -17,7 +17,7 @@
 			  <div class="col-md-4">
 				  <div class="card shadow" style="width: 20rem;">
 					  <div class="inner">
-						    <img src="coverpage/image1.png" class="card-img-top" alt="Card image cap">
+						    <img src="images/image1.png" class="card-img-top" alt="Card image cap">
 					  </div>
 					  <div class="card-body text-center">
 						  <h5 class="card-title">Customer</h5>
@@ -29,7 +29,7 @@
 			  <div class="col-md-4">
 				  <div class="card shadow" style="width: 20rem;">
 					  <div class="inner">
-						  <img src="coverpage/image2.jpg" class="card-img-top" alt="Card image cap">
+						  <img src="images/image2.jpg" class="card-img-top" alt="Card image cap">
 					  </div>
 					  <div class="card-body text-center">
 						  <h5 class="card-title">Supplier</h5>
@@ -40,7 +40,7 @@
 			  <div class="col-md-4">
 				  <div class="card shadow" style="width: 20rem;">
 					  <div class="inner">
-						  <img src="coverpage/download (1).png" class="card-img-top" alt="Card image cap">
+						  <img src="images/image3.png" class="card-img-top" alt="Card image cap">
 					  </div>
 					  <div class="card-body text-center">
 						  <h5 class="card-title">Admin</h5>
