@@ -107,7 +107,7 @@
         
         <tr>
             <td><label for="textfield">Total Amount : </label>
-            <input type="text" name="orderAmount" id="orderAmount"></td>
+            <input type="text" name="orderAmount" id="orderAmount" required></td>
         </tr>
         <?php
         
