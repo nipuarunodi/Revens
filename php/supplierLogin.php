@@ -74,8 +74,8 @@
 			?>
 	       <br>
             <div class="input-group">
-                <input class="badge-success" type="submit" name="btnSignIn" value="Sign In">&nbsp;&nbsp;
-                <input class="badge-info" type="button" id="btnSignUp" value="Sign Up">
+                <input class="btn btn-success" type="submit" name="btnSignIn" value="Sign In">&nbsp;&nbsp;
+                <input class="btn btn-info" type="button" id="btnSignUp" value="Sign Up">
             </div>
 		</center>
 	</form>
