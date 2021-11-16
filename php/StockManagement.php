@@ -102,11 +102,11 @@ include "config.php";
         </tr>
         <tr>
           <td height="123" colspan="2"><p>&nbsp;
-            <input name="submit" type="submit" class="badge-danger"  onClick="validateAll()" value="Add"/>
+            <input name="submit" type="submit" class="btn btn-danger"  onClick="validateAll()" value="Add"/>
             &nbsp; 
-             <input name="reset" type="reset" class="badge-secondary" value="Reset">
+             <input name="reset" type="reset" class="btn btn-secondary" value="Reset">
             <a href="ViewStocks.php"> &nbsp;
-            <input name=ViewStocks type="button" class="badge-primary"  value="View" >
+            <input name=ViewStocks type="button" class="btn btn-primary"  value="View" >
             </a></p>
           </td>
         </tr>
