@@ -132,7 +132,7 @@
         <td><?php echo $row['orderDate'];?></td>
 		<td><?php echo $row['orderStatus'];?></td>
 
-        <td> <a href="orderdetails.php?orderId=<?php echo $row['orderId']; ?>"</a><input name=viewOrder type="button" class="badge-primary"  value="View Order" ></td>
+        <td> <a href="orderdetails.php?orderId=<?php echo $row['orderId']; ?>"</a><input name=viewOrder type="button" class="btn btn-success"  value="View Order" ></td>
         </tr>
 
 		<?php
