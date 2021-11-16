@@ -82,7 +82,7 @@ $result = $conn->query($sql);
 				{
 					die("Cannot connect to the database server");
 				}
-				$sql = "SELECT SUM(totalAmount) FROM supplierorder";
+				$sql = "SELECT SUM(totalAmount) FROM customerorder";
 				$results = mysqli_query($conn,$sql);
 				if(mysqli_num_rows($results)>0)
 				{
@@ -97,7 +97,7 @@ $result = $conn->query($sql);
 				}
 				mysqli_close($conn);
 					?>
-				<td><?php echo $income+$total ?></td>
+				<td><?php echo $income-$total ?></td>
 				<?php
 				$conn = mysqli_connect("localhost","root","","jayasiripharmacydb");
 				if(!$conn)
