@@ -56,7 +56,7 @@ $result = $conn->query($sql);
    <table width="100" border="2px" align="left" class="table table-striped" style="width:600px; line-height: 40px;">
   <tr>
 		  		<th width="33%">Net Worth of Stocks</th>
-		        <th width="33%">Income without Stock Worth</th>
+		        <th width="33%">Pending Stock Worth</th>
 		        <th width="33%">Total Stock Quantity</th>
   	 </tr>
 		    <tr>
@@ -82,7 +82,7 @@ $result = $conn->query($sql);
 				{
 					die("Cannot connect to the database server");
 				}
-				$sql = "SELECT SUM(totalAmount) FROM customerorder";
+				$sql = "SELECT SUM(totalAmount) FROM supplierorder";
 				$results = mysqli_query($conn,$sql);
 				if(mysqli_num_rows($results)>0)
 				{
@@ -97,7 +97,7 @@ $result = $conn->query($sql);
 				}
 				mysqli_close($conn);
 					?>
-				<td><?php echo $income-$total ?></td>
+				<td><?php echo $income+$total ?></td>
 				<?php
 				$conn = mysqli_connect("localhost","root","","jayasiripharmacydb");
 				if(!$conn)
