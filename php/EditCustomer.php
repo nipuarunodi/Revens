@@ -118,7 +118,7 @@ include "config.php";
               <p>&nbsp;</p>
 		    </div>
            <div>
-             <input name="update" type="submit" class="badge-danger" id="update" onClick="validateAll()" value="Update"/>
+             <input name="update" type="submit" class="btn btn-danger" id="update" onClick="validateAll()" value="Update"/>
           </div>
       </form>
     </body>
