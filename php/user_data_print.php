@@ -56,7 +56,7 @@ $result = $conn->query($sql);
 		  		<th width="33%">Net Worth of Stocks</th>
 		        <th width="33%">Total income Without Stock Worth</th>
 		        <th width="33%">Total Stock Quantity</th>
-  	 </tr>
+  </tr>
 		    <tr>
 				<?php
 				$sql = "SELECT SUM(price) FROM stock";
@@ -138,7 +138,7 @@ $result = $conn->query($sql);
 		<th width="85" scope="col" >Price</th>
 		<th width="123" scope="col" >Quantity</th>
 		
-	</tr>
+	   </tr>
   </thead>
 	<tbody id="myTable" >	
 		<?php
@@ -160,7 +160,7 @@ $result = $conn->query($sql);
 			}
 		?>
 	        	
-  </tbody>
+</tbody>
 </table>
 </body>
 </html>
