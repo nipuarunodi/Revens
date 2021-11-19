@@ -12,6 +12,10 @@
 
 <body>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+	
+>>>>>>> origin/master
 	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
@@ -132,7 +136,11 @@
         <td><?php echo $row['orderDate'];?></td>
 		<td><?php echo $row['orderStatus'];?></td>
 
+<<<<<<< HEAD
         <td> <a href="orderdetails.php?orderId=<?php echo $row['orderId']; ?>"</a><input name=viewOrder type="button" class="badge-primary"  value="View Order" ></td>
+=======
+        <td> <a href="orderdetails.php?orderId=<?php echo $row['orderId']; ?>"</a><input name=viewOrder type="button" class="btn btn-success"  value="View Order" ></td>
+>>>>>>> origin/master
         </tr>
 
 		<?php

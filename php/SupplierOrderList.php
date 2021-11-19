@@ -67,7 +67,11 @@ if(!isset($_SESSION["id"]))
 			<td><?php echo $row['orderDetails']?></td>
 			<td><?php echo $row['orderStatus']?></td>
 			<td><?php echo $row['totalAmount']?></td>
+<<<<<<< HEAD
 			<td><a href="SupplierOrderDetails.php?id=<?php echo $row['orderId'] ?>"</a><input name=ViewOrder type="button" class="badge-primary"  value="ViewOrder" ></td>
+=======
+			<td><a href="SupplierOrderDetails.php?id=<?php echo $row['orderId'] ?>"</a><input name=ViewOrder type="button" class="btn btn-primary"  value="ViewOrder" ></td>
+>>>>>>> origin/master
 		  </tr>
 		  <?php
 			}

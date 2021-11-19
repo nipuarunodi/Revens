@@ -23,8 +23,9 @@ $result = $conn->query($sql);
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/CustomerOrderListPrint.css" media="print">
   </head>
-  <body>
+<body>
 	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
     <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
@@ -50,37 +51,13 @@ $result = $conn->query($sql);
 	<h1>View Stocks</h1>
 	</center>
 	<p><div class="container">
-<<<<<<< HEAD
-	  <h4>Filter the stocks details:</h4><p>
-   <input id="myInput" type="text"placeholder="Search.."></p>
-<<<<<<< HEAD
-   <p><p>
-     <button onclick="sortTable()">Sort Table</button></p><br></p>
-<table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
-
-  <p>&nbsp;</p>
-   <p>
-  <button class="badge-success" onclick="sortTable()">Sort Table</button></p><br></p>
-<table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
-
-	<thead>
-		<tr>
-		<th scope="col">Did</th>
-		<th scope="col" >Drug Code</th>
-		<th scope="col" >Drug Name</th>
-		<th scope="col" >Price</th>
-		<th scope="col" >Quantity</th>
-		<th scope="col" >Action</th>
-=======
-  <h4>Filter the stocks details:</h4><p>
-   <input id="myInput" type="text"placeholder="Search Stocks..."></p>
    <p>&nbsp;</p>
-  <table width="100" border="2px" align="left" class="table table-striped" style="width:600px; line-height: 40px;">
-    <tr>
+   <table width="100" border="2px" align="left" class="table table-striped" style="width:600px; line-height: 40px;">
+  <tr>
 		  		<th width="33%">Net Worth of Stocks</th>
-		        <th width="33%">Total income without Stock Worth</th>
+		        <th width="33%">Total income Without Stock Worth</th>
 		        <th width="33%">Total Stock Quantity</th>
-		  	</tr>
+  </tr>
 		    <tr>
 				<?php
 				$sql = "SELECT SUM(price) FROM stock";
@@ -141,30 +118,29 @@ $result = $conn->query($sql);
 				}
 				mysqli_close($conn);
 				?>
-  	</tr>	</table>
+		  	</tr>	</table>
   <p><br>
     <br>
   </p>
   <p>&nbsp; </p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <br>  
-  <p><a href="user_data_print.php" class="btn btn-warning">Generate a Stock Report</a>
-    <button class="btn btn-success" onclick="sortTable();">Sort Table</button>
-  </p>
-  <p>&nbsp;</p>
-  <table width="1112" border="1px"align="center" class="table table-striped" style="width:1050px; line-height: 40px;" >
-	<thead>
+  <br>   
+<p><button onClick="window.print();" class="btn btn-warning" id="print-btn">Generate a Stock Report</button>
+</p>
+  
+<p>&nbsp;</p>
+<table width="1112" border="1px"align="center" class="table table-striped" style="width:1050px; line-height: 40px;" >
+  <thead>
 		<tr>
 		<th width="77" scope="col">Did</th>
 		<th width="125" scope="col" >Drug Code</th>
 		<th width="112" scope="col" >Drug Name</th>
 		<th width="85" scope="col" >Price</th>
 		<th width="123" scope="col" >Quantity</th>
-		<th width="125" scope="col" >Action</th>
->>>>>>> origin/master
-	</tr>
-	</thead>
+		
+	   </tr>
+  </thead>
 	<tbody id="myTable" >	
 		<?php
 			if ($result->num_rows > 0) {
@@ -178,11 +154,6 @@ $result = $conn->query($sql);
 					<td><?php echo $row['drugName']; ?></td>
 					<td><?php echo $row['price']; ?></td>
 					<td><?php echo $row['quantity']; ?></td>
-<<<<<<< HEAD
-					<td width="141"><p><a  href="UpdateStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=UpdateStocks type="button" class="badge-danger"  value="Update" >&nbsp;<a href="DeleteStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=DeleteStocks type="button" class="badge-primary"  value="Delete" ></p></td>
-=======
-					<td width="488"><p><a  href="UpdateStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=UpdateStocks type="button" class="btn btn-danger"  value="Update" >&nbsp;<a href="DeleteStocks.php?id=<?php echo $row['Did']; ?>"</a><input name=DeleteStocks type="button" class="btn btn-primary"  value="Delete" ></p></td>
->>>>>>> origin/master
 					</tr>	
 					
 		<?php		
@@ -190,64 +161,7 @@ $result = $conn->query($sql);
 			}
 		?>
 	        	
-<<<<<<< HEAD
-        </tbody>
-   </table>
-	  
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp; </p>
-=======
-  </tbody>
-  </table>
->>>>>>> origin/master
-<script>
-function sortTable() {
-  var table, rows, switching, i, x, y, shouldSwitch;
-  table = document.getElementById("myTable");
-  switching = true;
-  
-  while (switching) {
-    
-    switching = false;
-    rows = table.rows;
-    
-    for (i = 1; i < (rows.length - 1); i++) {
-      
-      shouldSwitch = false;
-      
-      
-      x = rows[i].getElementsByTagName("TD")[0];
-      y = rows[i + 1].getElementsByTagName("TD")[0];
-      
-      if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-<<<<<<< HEAD
-       
-=======
-        
->>>>>>> origin/master
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-    }
-  }
-}
-<<<<<<< HEAD
-=======
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myTable tr").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
->>>>>>> origin/master
-  </script>
+</tbody>
+</table>
 </body>
 </html>

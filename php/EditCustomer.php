@@ -103,9 +103,12 @@ include "config.php";
             </div>
             <div class="input-group">
               <p>
-                <label>Contact Address</label>
-                <input type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
-              </p>
+                <p>
+                  <label>Contact Address</label>
+                  <input type="text" id="txtAddress" name="address" placeholder="Enter Address..." value="<?php echo $address; ?>">
+                  </p>
+                </p>
+                <p>&nbsp;</p>
             </div>
 	        <div>
               <p>
@@ -115,7 +118,11 @@ include "config.php";
               <p>&nbsp;</p>
 		    </div>
            <div>
+<<<<<<< HEAD
              <input name="update" type="submit" class="badge-danger" id="update" onClick="validateAll()" value="Update"/>
+=======
+             <input name="update" type="submit" class="btn btn-danger" id="update" onClick="validateAll()" value="Update"/>
+>>>>>>> origin/master
           </div>
       </form>
     </body>

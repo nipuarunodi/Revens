@@ -149,10 +149,17 @@
     <tbody>
       <tr>
         <td width="247"><input type="submit" name="confirm"
+<<<<<<< HEAD
                 class="badge-success" value="Confirm" /></td>
         <td width="247"><input type="submit" name="reject"
                 class="badge-danger" value="Reject" /></td>
         <td width="244"><input name="button3" type="button" class="badge-secondary" id="button3" value="Back"></td>
+=======
+                class="btn btn-success" value="Confirm" /></td>
+        <td width="247"><input type="submit" name="reject"
+                class="btn btn-danger" value="Reject" /></td>
+        <td width="244"><input name="button3" type="button" class="btn btn-secondary" id="button3" value="Back"></td>
+>>>>>>> origin/master
       </tr>
     </tbody>
   </table>

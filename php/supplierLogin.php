@@ -77,10 +77,15 @@
 	       <br>
             <div class="input-group">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <input class="input-btn" type="submit" name="btnSignIn" value="Sign In">
 =======
                 <input class="badge-success" type="submit" name="btnSignIn" value="Sign In">&nbsp;&nbsp;
                 <input class="badge-info" type="button" id="btnSignUp" value="Sign Up">
+>>>>>>> origin/master
+=======
+                <input class="btn btn-success" type="submit" name="btnSignIn" value="Sign In">&nbsp;&nbsp;
+                <input class="btn btn-info" type="button" id="btnSignUp" value="Sign Up">
 >>>>>>> origin/master
             </div>
 		</center>

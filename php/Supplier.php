@@ -79,7 +79,11 @@
 				<td><?php echo $row['teleNo']; ?></td>
 				<td><?php echo $row['supplierName']; ?></td>
 				<td><?php echo $row['supplierCompanyName']; ?></td>
+<<<<<<< HEAD
 				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Order type="button" class="badge-success"  value="Order" >&nbsp;&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>"</a><input name=SupplierOrdersView type="button" class="badge-primary"  value="Supplier Orders View" >&nbsp;&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Delete type="button" class="badge-secondary"  value="Delete" ></td>
+=======
+				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Order type="button" class="btn btn-success"  value="Order" >&nbsp;&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>"</a><input name=SupplierOrdersView type="button" class="btn btn-primary"  value="Supplier Orders View" >&nbsp;&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Delete type="button" class="btn btn-secondary"  value="Delete" ></td>
+>>>>>>> origin/master
 			</tr>
 		<?php
 		    }

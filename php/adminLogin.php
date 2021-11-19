@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -14,6 +15,8 @@
 	<link rel="stylesheet" href = "../css/Form.css">
 </head>
 =======
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,6 +30,9 @@
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
    </head>
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 
 <body>
@@ -40,6 +46,7 @@
 	<br>
 	<br>
 <form id="form1" name="form1" method="post">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <div class="signup-box"> 
 	   <center><h1 class="form-heading"> ADMIN LOGIN </h1></center>
@@ -62,6 +69,8 @@
         </p>
    <?php
 =======
+=======
+>>>>>>> origin/master
  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
@@ -79,7 +88,11 @@
       </tr>
       <tr>
         <td height="41"><center><p>&nbsp;</p></center></td>
+<<<<<<< HEAD
         <td><input name="submit" type="submit" class="badge-primary" id="" value="Login">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
+=======
+        <td><input name="submit" type="submit" class="btn btn-primary" id="" value="Login">  <input name="btnreset" type="reset" class="btn btn-secondary" id="btnreset" value="Reset"></td>
+>>>>>>> origin/master
       </tr>
     </tbody>
   </table>

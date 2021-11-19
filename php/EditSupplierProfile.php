@@ -77,7 +77,11 @@ if(!isset($_SESSION["id"]))
 		</tr>
 		  
 		  <td>&nbsp;</td>
+<<<<<<< HEAD
 			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update"></td>
+=======
+			<td><input name="btnsubmit" type="submit" class="btn btn-danger" id="btnsubmit" onClick="validateAll()" value="Update"></td>
+>>>>>>> origin/master
 		  </tr>
 		  <?php
 		}
