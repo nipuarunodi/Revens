@@ -71,8 +71,7 @@ include "config.php";
   <p>Manage Stocks</p>
   </center></h2>
         <form action="StockManagement.php" method="POST">
-        <p><br></p>
-<<<<<<< HEAD
+			<p><br></p>
 	    
 
 	     <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
@@ -103,11 +102,11 @@ include "config.php";
         </tr>
         <tr>
           <td height="123" colspan="2"><p>&nbsp;
-            <input name="submit" type="submit" class="badge-danger"  onClick="validateAll()" value="Add"/>
+            <input name="submit" type="submit" class="btn btn-danger"  onClick="validateAll()" value="Add"/>
             &nbsp; 
-             <input name="reset" type="reset" class="badge-secondary" value="Reset">
+             <input name="reset" type="reset" class="btn btn-secondary" value="Reset">
             <a href="ViewStocks.php"> &nbsp;
-            <input name=ViewStocks type="button" class="badge-primary"  value="View" >
+            <input name=ViewStocks type="button" class="btn btn-primary"  value="View" >
             </a></p>
           </td>
         </tr>

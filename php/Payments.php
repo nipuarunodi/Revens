@@ -90,10 +90,14 @@
 		</table>
 		  </center>
 	  <br>
-	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="badge-warning"  value="Add Another Payment" ></a></center>
+	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="btn btn-warning"  value="Add Another Payment" ></a></center>
 	  <br>
+<<<<<<< HEAD
 		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Generate Customer Payment Report"></a></center>
 	  <br>
+=======
+		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="btn btn-warning" value="Customer Payment Report Generate"></a></center>
+>>>>>>> origin/master
 	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
 	  <tr>
 		<td width="50%">

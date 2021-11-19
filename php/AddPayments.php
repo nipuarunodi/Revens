@@ -92,7 +92,7 @@
 		  </tr>
 		  <tr>
 		  <td>&nbsp;</td>
-		  <td><input name="btnSubmit" type="submit" class="badge-success" id="btnSubmit" onClick="validateAll()" value="Add">&nbsp;<input name="btnReset" type="reset" class="badge-secondary" id="btnReset" value="Reset"></td>
+		  <td><input name="btnSubmit" type="submit" class="btn btn-success" id="btnSubmit" onClick="validateAll()" value="Add">&nbsp;<input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Reset"></td>
 		  </tr>
 		  </table>
 		  <?php
@@ -144,7 +144,7 @@
       <td><?php echo $row['paymentId'];?></td>
       <td><?php echo $row['paymentDetails'];?></td>
       <td><?php echo $row['amount'];?></td>
-	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=UpdateStocks type="button" class="badge-danger"  value="Update" >&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=DeleteStocks type="button" class="badge-primary"  value="Delete" ></td>
+	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=UpdateStocks type="button" class="btn btn-danger"  value="Update" >&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=DeleteStocks type="button" class="btn btn-primary"  value="Delete" ></td>
     </tr>
 	 <?php
 			}

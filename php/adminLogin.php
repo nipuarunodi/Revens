@@ -40,7 +40,7 @@
       </tr>
       <tr>
         <td height="41"><center><p>&nbsp;</p></center></td>
-        <td><input name="submit" type="submit" class="badge-primary" id="" value="Login">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
+        <td><input name="submit" type="submit" class="btn btn-primary" id="" value="Login">  <input name="btnreset" type="reset" class="btn btn-secondary" id="btnreset" value="Reset"></td>
       </tr>
     </tbody>
   </table>

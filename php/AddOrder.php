@@ -71,8 +71,8 @@ if(!isset($_SESSION["id"]))
                         </tr>
                         <tr>
                             <td height="55" colspan="2" style="text-align:center"><blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input name="btnSubmit" type="submit" class="badge-danger" id="btnSubmit" value="Add Now"   />
-                                 <input name="btnReset" type="reset" class="badge-secondary" id="btnReset" value="Cancel"   />
+                                <input name="btnSubmit" type="submit" class="btn btn-danger" id="btnSubmit" value="Add Now"   />
+                                 <input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Cancel"   />
                                 
                                 <?php
                                 
