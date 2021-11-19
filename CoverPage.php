@@ -12,6 +12,10 @@
   </head>
 	
   <body>
+	  <br>
+	  <br>
+	  <br>
+	  <center><h1>Welcome To JAYASIRI <br> Pharmacy</h1></center>
 	  <div class="container">
 		  <div class="row justify-content-center">
 			  <div class="col-md-4">
