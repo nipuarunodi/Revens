@@ -7,7 +7,7 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
-	<link rel="stylesheet" type="text/css" href="../css/SupplierPaymentReport.css" media="print">
+	<link rel="stylesheet" type="text/css" href="../css/CustomerOrderListPrint.css" media="print">
 </head>
 	 <body style="padding-top: 70px">
 	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
