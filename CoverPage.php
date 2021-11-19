@@ -12,19 +12,10 @@
   </head>
 	
   <body>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/master
 	  <br>
 	  <br>
 	  <br>
 	  <center><h1>Welcome To JAYASIRI <br> Pharmacy</h1></center>
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
 	  <div class="container">
 		  <div class="row justify-content-center">
 			  <div class="col-md-4">

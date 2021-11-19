@@ -20,7 +20,6 @@ if(!isset($_SESSION["id"]))
 	<script src="../js/bootstrap-4.3.1.js"></script>
 </head>
 <body>
-<<<<<<< HEAD
     <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
@@ -71,19 +70,9 @@ if(!isset($_SESSION["id"]))
                         </tr>
                         <tr>
                             <td height="55" colspan="2" style="text-align:center"><blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                <input name="btnSubmit" type="submit" class="badge-danger" id="btnSubmit" value="Add Now"   />
-                                 <input name="btnReset" type="reset" class="badge-secondary" id="btnReset" value="Cancel"   />
-=======
                                 <input name="btnSubmit" type="submit" class="btn btn-danger" id="btnSubmit" value="Add Now"   />
                                  <input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Cancel"   />
->>>>>>> origin/master
-=======
-                                <input name="btnSubmit" type="submit" class="btn btn-danger" id="btnSubmit" value="Add Now"   />
-                                 <input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Cancel"   />
->>>>>>> origin/master
-                                
+
                                 <?php
                                 
                                 if(isset($_POST["btnSubmit"])){

@@ -126,8 +126,10 @@ $result = $conn->query($sql);
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <br>   
-<p><button onClick="window.print();" class="btn btn-warning" id="print-btn">Generate a Stock Report</button>
+	
+<p><button onClick="window.print();" class="btn btn-primary" id="print-btn">Print</button>
 </p>
+
   
 <p>&nbsp;</p>
 <table width="1112" border="1px"align="center" class="table table-striped" style="width:1050px; line-height: 40px;" >

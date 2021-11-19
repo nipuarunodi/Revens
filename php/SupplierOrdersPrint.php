@@ -10,7 +10,7 @@
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/popper.min.js"></script> 
 	<script src="../js/bootstrap-4.3.1.js"></script>
-	
+	<link rel="stylesheet" type="text/css" href="../css/CustomerOrderListPrint.css" media="print">
 	
 	  
   </head>	
@@ -41,7 +41,8 @@
 	  <br>
 	  <br>
 	  <br>
-	<center><a href="SupplierOrdersPrint.php"><input type="button" class="btn btn-warning" value="Supplier Orders Report Generate"></a></center>
+	<center><button onClick="window.print();" class="btn btn-primary" id="print-btn">Print</button></center>
+
 	<br>
 	<table class="table table-striped" align="center" border="1px" style="width:900px; line-height: 40px;">
 
@@ -55,7 +56,7 @@
 			<th scope="col">Tele No</th>
 			<th scope="col">Supplier Name</th>
 			<th scope="col">Supplier Company Name</th>
-			<th>&nbsp;</th>
+			
 		</tr>
 		
 		
@@ -82,7 +83,7 @@
 				<td><?php echo $row['supplierName']; ?></td>
 				<td><?php echo $row['supplierCompanyName']; ?></td>
 
-				<td><a href="OrderSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Order type="button" class="btn btn-success"  value="Order" >&nbsp;&nbsp;<a href="SupplierOrdersView.php?id=<?php echo $row['supplierId'];?>"</a><input name=SupplierOrdersView type="button" class="btn btn-primary"  value="Supplier Orders View" >&nbsp;&nbsp;<a href="DeleteSupplier.php?id=<?php echo $row['supplierId'];?>"</a><input name=Delete type="button" class="btn btn-secondary"  value="Delete" ></td>
+				
 
 			</tr>
 		<?php

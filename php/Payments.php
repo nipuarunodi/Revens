@@ -90,38 +90,22 @@
 		  	</tr>
 		</table>
 		  </center>
-<<<<<<< HEAD
-<<<<<<< HEAD
-	  <br>
-	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="badge-warning"  value="Add Another Payment" ></a></center>
-	  <br>
-		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Customer Payment Report Generate"></a></center>
-=======
+	 
+
 	  <br>
 	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="btn btn-warning"  value="Add Another Payment" ></a></center>
 	  <br>
-<<<<<<< HEAD
-		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Generate Customer Payment Report"></a></center>
-	  <br>
-=======
+
 		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="btn btn-warning" value="Customer Payment Report Generate"></a></center>
->>>>>>> origin/master
->>>>>>> origin/master
-=======
+<br>
+	  <center><a href="SupplierPaymentReport.php"><input type="button" class="btn btn-warning" value="Supplier Payment Report Generate"></a></center>
+	  
 	  <br>
-	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="btn btn-warning"  value="Add Another Payment" ></a></center>
-	  <br>
-<<<<<<< HEAD
-		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Generate Customer Payment Report"></a></center>
-	  <br>
-=======
-		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="btn btn-warning" value="Customer Payment Report Generate"></a></center>
->>>>>>> origin/master
->>>>>>> origin/master
-	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
+
+	  <table align="center" style="width:600px; line-height: 40px;">
 	  <tr>
 		<td width="50%">
-		<table align="center" border="1px" style="width:600px; line-height: 40px;">
+		<table align="center" border="1px" style="width:300px; line-height: 40px;">
 			<tr>
 			<th scope="col">Order ID</th>
 			<th scope="col">Customer ID</th>
@@ -154,7 +138,7 @@
 		</table>  
 		</td>
 		<td width="50%">
-		<table border="1" width="99%">
+		<table align="center" border="1" style="width:300px; line-height: 40px;">
 		<tr>
 			<th scope="col">Order ID</th>
 			<th scope="col">Supplier ID</th>

@@ -118,15 +118,9 @@ include "config.php";
               <p>&nbsp;</p>
 		    </div>
            <div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-             <input name="update" type="submit" class="badge-danger" id="update" onClick="validateAll()" value="Update"/>
-=======
+
              <input name="update" type="submit" class="btn btn-danger" id="update" onClick="validateAll()" value="Update"/>
->>>>>>> origin/master
-=======
-             <input name="update" type="submit" class="btn btn-danger" id="update" onClick="validateAll()" value="Update"/>
->>>>>>> origin/master
+
           </div>
       </form>
     </body>

@@ -44,7 +44,7 @@ if(!isset($_SESSION["id"]))
 
 	<center><h1>My Profile</h1></center><br>
 
-	<table class="tsble table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
+	<table class="table table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
 		 
 		<?php
 		 $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
@@ -80,9 +80,12 @@ if(!isset($_SESSION["id"]))
 		   <td> <?php echo $row['teleNo'];?></td>
 		 </tr>
 		 
-		 <a href="SupplierOrderList.php?id=<?php echo $row['supplierId'] ?>">View Orders</a>&nbsp;
-		 <a href="EditSupplierProfile.php?id=<?php echo $row['supplierId'] ?>">Edit Profile</a>
-		 
+		<center>
+		 <a href="SupplierOrderList.php?id=<?php echo $row['supplierId'] ?>"</a>
+		<input name=AddOrder type="button" class="btn btn-danger"  value="View Orders" >
+		 <a href="EditSupplierProfile.php?id=<?php echo $row['supplierId'] ?>"</a>
+		<input name=ViewOrderHistory type="button" class="btn btn-primary"  value="Edit Profile" >
+		 </center>
 		 <?php
 		 }
 		 ?>

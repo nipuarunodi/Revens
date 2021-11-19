@@ -82,17 +82,11 @@
         
 
             <div class="input-group">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <input class="badge-primary" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
-=======
+
                 <input class="btn btn-primary" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
->>>>>>> origin/master
-=======
-                <input class="btn btn-primary" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick="validateAll()"/>
->>>>>>> origin/master
+
             </div>
-			<a class ="alredy" href=customerLogin.php>You alredy have an account?Login here</a>
+			<a class ="alredy" href=customerLogin.php>You already have an account?Login here</a>
 
 	   </form>
     </div>

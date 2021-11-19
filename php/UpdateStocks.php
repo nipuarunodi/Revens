@@ -101,15 +101,9 @@ include "config.php";
 		          <td><input type="number" name="quantity" id="quantity" value="<?php echo $quantity; ?>" required/></td>
 	            </tr>
 		        <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-		          <td colspan="2"><input name="update" type="submit" class="badge-danger"  onClick="validateAll()" value="Update"/></td>
-=======
+
 		          <td colspan="2"><input name="update" type="submit" class="btn btn-danger"  onClick="validateAll()" value="Update"/></td>
->>>>>>> origin/master
-=======
-		          <td colspan="2"><input name="update" type="submit" class="btn btn-danger"  onClick="validateAll()" value="Update"/></td>
->>>>>>> origin/master
+
 	            </tr>
           </tbody>
       </table>

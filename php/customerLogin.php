@@ -75,15 +75,9 @@
 	       <br>
 		   <br>
             <div class="input-group">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <input class="badge-primary" type="submit" name="btnSignIn" value="Sign In">
-=======
+
                 <input class="btn btn-primary" type="submit" name="btnSignIn" value="Sign In">
->>>>>>> origin/master
-=======
-                <input class="btn btn-primary" type="submit" name="btnSignIn" value="Sign In">
->>>>>>> origin/master
+
             </div>
 		</div>
 	</form>

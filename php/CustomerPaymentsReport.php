@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<?php
-
-require('fpdf.php');
-
-$pdf = new FPDF();
-$pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->Cell(40,10,'Hello World!');
-$pdf->Output();
-
-?>
-=======
-=======
->>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -80,8 +64,5 @@ $pdf->Output();
 		</table> <br>
 		<center><button onclick="window.print();" class="btn btn-primary" id="print-btn">Print</button></center>
 	</body>
-</html
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
->>>>>>> origin/master
+</html>
+

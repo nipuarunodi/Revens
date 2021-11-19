@@ -125,15 +125,11 @@ if(!isset($_SESSION["id"]))
 			</tr>
 			<tr>
 			<td>&nbsp;</td>
-<<<<<<< HEAD
-<<<<<<< HEAD
-			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update" onClick="validateAll()"></td>
-=======
+
+
 			<td><input type="submit" id="btnUpdate" class="btn btn-danger" name="btnUpdate" value="update" onClick="validateAll()"></td>
->>>>>>> origin/master
-=======
-			<td><input type="submit" id="btnUpdate" class="btn btn-danger" name="btnUpdate" value="update" onClick="validateAll()"></td>
->>>>>>> origin/master
+
+
 			</tr>
 		<?php
 		}

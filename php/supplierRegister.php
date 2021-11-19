@@ -83,15 +83,9 @@
         
 
             <div class="input-group">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <input class="btn-info" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
-=======
+
                 <input class="btn btn-info" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
->>>>>>> origin/master
-=======
-                <input class="btn btn-info" name="btnRegister" type="submit" id="btnRegister"value="Sign Up" onClick=" validateAll()" />
->>>>>>> origin/master
+
             </div>
 		<a class ="alredy" href=supplierLogin.php>You alredy have an account?Login here</a>
 		</center>
