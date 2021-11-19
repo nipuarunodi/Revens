@@ -91,10 +91,22 @@
 		</table>
 		  </center>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	  <br>
 	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="badge-warning"  value="Add Another Payment" ></a></center>
 	  <br>
 		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Customer Payment Report Generate"></a></center>
+=======
+	  <br>
+	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="btn btn-warning"  value="Add Another Payment" ></a></center>
+	  <br>
+<<<<<<< HEAD
+		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="badge-warning" value="Generate Customer Payment Report"></a></center>
+	  <br>
+=======
+		  <center><a href="CustomerPaymentsReport.php"><input type="button" class="btn btn-warning" value="Customer Payment Report Generate"></a></center>
+>>>>>>> origin/master
+>>>>>>> origin/master
 =======
 	  <br>
 	  <center><a href="AddPayments.php"><input name=AddAnotherPayment type="button" class="btn btn-warning"  value="Add Another Payment" ></a></center>

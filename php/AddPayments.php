@@ -93,7 +93,11 @@
 		  <tr>
 		  <td>&nbsp;</td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 		  <td><input name="btnSubmit" type="submit" class="badge-success" id="btnSubmit" onClick="validateAll()" value="Add">&nbsp;<input name="btnReset" type="reset" class="badge-secondary" id="btnReset" value="Reset"></td>
+=======
+		  <td><input name="btnSubmit" type="submit" class="btn btn-success" id="btnSubmit" onClick="validateAll()" value="Add">&nbsp;<input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Reset"></td>
+>>>>>>> origin/master
 =======
 		  <td><input name="btnSubmit" type="submit" class="btn btn-success" id="btnSubmit" onClick="validateAll()" value="Add">&nbsp;<input name="btnReset" type="reset" class="btn btn-secondary" id="btnReset" value="Reset"></td>
 >>>>>>> origin/master
@@ -124,7 +128,10 @@
 	  <br>
 	  <center>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<center><a href="SupplierPaymentReport.php"><input type="button" class="badge-warning" value="Supplier Payment Report Generate"></a></center>
+=======
+>>>>>>> origin/master
 =======
 >>>>>>> origin/master
 	  <table align="center" border="1px" style="width:600px; line-height: 40px;">
@@ -153,7 +160,11 @@
       <td><?php echo $row['paymentDetails'];?></td>
       <td><?php echo $row['amount'];?></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=UpdateStocks type="button" class="badge-danger"  value="Update" >&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=DeleteStocks type="button" class="badge-primary"  value="Delete" ></td>
+=======
+	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=UpdateStocks type="button" class="btn btn-danger"  value="Update" >&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=DeleteStocks type="button" class="btn btn-primary"  value="Delete" ></td>
+>>>>>>> origin/master
 =======
 	  <td><a href="EditPayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=UpdateStocks type="button" class="btn btn-danger"  value="Update" >&nbsp;<a href="DeletePayments.php?id=<?php echo $row['paymentId'];?>"</a><input name=DeleteStocks type="button" class="btn btn-primary"  value="Delete" ></td>
 >>>>>>> origin/master

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 
 require('fpdf.php');
@@ -11,6 +12,8 @@ $pdf->Output();
 
 ?>
 =======
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -78,4 +81,7 @@ $pdf->Output();
 		<center><button onclick="window.print();" class="btn btn-primary" id="print-btn">Print</button></center>
 	</body>
 </html
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

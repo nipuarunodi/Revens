@@ -80,17 +80,23 @@ if(!isset($_SESSION["id"]))
 	<center>
 	<a href="AddOrder.php?id=<?php echo $row['customerId']; ?>"</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<input name=AddOrder type="button" class="badge-danger"  value="Add Order" >
 	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>"</a>
 	<input name=ViewOrderHistory type="button" class="badge-primary"  value="View Order History" >
 	<a  href="EditCustomer.php?id=<?php echo $row['customerId']; ?>"</a>
 	<input name=EditUserDetails type="button" class="badge-success"  value="Edit User Details" >
 =======
+=======
+>>>>>>> origin/master
 	<input name=AddOrder type="button" class="btn btn-danger"  value="Add Order" >
 	<a  href="customerOrderHistory.php?id=<?php echo $row['customerId']; ?>"</a>
 	<input name=ViewOrderHistory type="button" class="btn btn-primary"  value="View Order History" >
 	<a  href="EditCustomer.php?id=<?php echo $row['customerId']; ?>"</a>
 	<input name=EditUserDetails type="button" class="btn btn-success"  value="Edit User Details" >
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 </center>
 </body>

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -17,6 +18,8 @@
 =======
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> origin/master
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,6 +34,9 @@
 	<script src="../js/bootstrap-4.3.1.js"></script>
    </head>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
@@ -46,6 +52,7 @@
 	<br>
 	<br>
 <form id="form1" name="form1" method="post">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <div class="signup-box"> 
@@ -71,6 +78,8 @@
 =======
 =======
 >>>>>>> origin/master
+=======
+>>>>>>> origin/master
  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
@@ -89,7 +98,11 @@
       <tr>
         <td height="41"><center><p>&nbsp;</p></center></td>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <td><input name="submit" type="submit" class="badge-primary" id="" value="Login">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
+=======
+        <td><input name="submit" type="submit" class="btn btn-primary" id="" value="Login">  <input name="btnreset" type="reset" class="btn btn-secondary" id="btnreset" value="Reset"></td>
+>>>>>>> origin/master
 =======
         <td><input name="submit" type="submit" class="btn btn-primary" id="" value="Login">  <input name="btnreset" type="reset" class="btn btn-secondary" id="btnreset" value="Reset"></td>
 >>>>>>> origin/master
