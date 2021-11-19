@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<<<<<<< HEAD
+	
 	<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
