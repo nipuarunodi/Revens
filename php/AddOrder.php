@@ -20,13 +20,34 @@ if(!isset($_SESSION["id"]))
 	<script src="../js/bootstrap-4.3.1.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
+    <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
+
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item"> <a class="nav-link" href="CustomerViewProfile.php">My Profile</a> </li>
+	        <li class="nav-item active"> <a class="nav-link" href="AddOrder.php?id=<?php echo $_SESSION["id"]; ?>">Add Order</a> </li>
+			 <li class="nav-item"> <a class="nav-link" href="customerOrderHistory.php?id=<?php echo $_SESSION["id"]; ?>">Order History</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="EditCustomer.php?id=<?php echo $_SESSION["id"]; ?>">Edit My Profile</a> </li>
+          </ul>
+	      
+    </div>
+  </nav>
+	<br>
+	<br>
+	<br>
     <table width="100%">
+
         <tbody>
             <tr>
                 <td>&nbsp;</td>
                 <td colspan="2">
                     <form action="AddOrder.php" method="post" enctype="multipart/form-data">
-                    <table class="loginTable" style="padding: 20px" width="508" align="left">
+                    <table align="center" border="1px" style="width:600px; line-height: 40px;">
                     <tr>
                         <td height="59" colspan="2" bgcolor="#FFFFFF">
                             <h1 class="loginHeader">Add Order</h1>
@@ -44,14 +65,14 @@ if(!isset($_SESSION["id"]))
                     <tr>
                         <td height="39" class="inputFields"><label>Delivery Type</label></td>
                         <td>
-                            <input type="radio" name="delivery" value="Delivery"/>Delivery
-                            <input type="radio" name="delivery" value="PickUp"/>PickUp
+                            <input type="radio" name="delivery" value="Delivery" required="required"/>Delivery
+                            <input type="radio" name="delivery" value="PickUp" required="required"/>PickUp
                         </td>
                         </tr>
                         <tr>
                             <td height="55" colspan="2" style="text-align:center"><blockquote> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <input name="btnSubmit" type="submit" class="button" id="btnSubmit" value="Add Now"   />
-                                <input name="btnReset" type="reset" class="button" id="btnReset" value="Cancel"   />
+                                <input name="btnSubmit" type="submit" class="badge-danger" id="btnSubmit" value="Add Now"   />
+                                 <input name="btnReset" type="reset" class="badge-secondary" id="btnReset" value="Cancel"   />
                                 
                                 <?php
                                 

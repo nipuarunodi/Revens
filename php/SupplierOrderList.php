@@ -33,15 +33,18 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	<center><h1>My Order List</h1></center><br>
 	  <center>
-	  <table border="1" width="100%">
+	 <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		  <tr>
-		  	<th>Order ID</th>
-			<th>Order Date</th>
-			<th>Order Details</th>
-			<th>Order Status</th>
-			<th>Total Amount</th>
+		  	<th scope="col">Order ID</th>
+			<th scope="col">Order Date</th>
+			<th scope="col">Order Details</th>
+			<th scope="col">Order Status</th>
+			<th scope="col">Total Amount</th>
 			<th>&nbsp;</th>
 		  </tr>
 		  <?php
@@ -64,7 +67,7 @@ if(!isset($_SESSION["id"]))
 			<td><?php echo $row['orderDetails']?></td>
 			<td><?php echo $row['orderStatus']?></td>
 			<td><?php echo $row['totalAmount']?></td>
-			<td><a href="SupplierOrderDetails.php?id=<?php echo $row['orderId'] ?>">View Order</a></td>
+			<td><a href="SupplierOrderDetails.php?id=<?php echo $row['orderId'] ?>"</a><input name=ViewOrder type="button" class="badge-primary"  value="ViewOrder" ></td>
 		  </tr>
 		  <?php
 			}

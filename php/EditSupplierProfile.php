@@ -31,10 +31,13 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Edit Profile</h1></center><br>
 	  <center>
 	<form action="EditSupplierProfile.php?id=<?php echo $_SESSION["id"];?>" method="post">
-	  <table border="0">
+	  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		if(!$con)
@@ -74,7 +77,7 @@ if(!isset($_SESSION["id"]))
 		</tr>
 		  
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Update" onClick="validateAll()"></td>
+			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update"></td>
 		  </tr>
 		  <?php
 		}

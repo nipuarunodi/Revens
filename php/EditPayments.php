@@ -55,10 +55,31 @@
 	  
   </head>
   <body>
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item"> <a class="nav-link" href="OrderList.php">Customer Orders</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="Supplier.php">Supplier</a> </li>
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Stocks </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="ViewStocks.php">View Stocks</a> <a class="dropdown-item" href="StockManagement.php">Add Stocks</a>
+			</li>
+	        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Payments </a>
+	          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="Payments.php">Payments</a> <a class="dropdown-item" href="AddPayments.php">Add Payment</a>
+			  </li>
+          </ul>
+	      
+    </div>
+  </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Edit Payments</h1></center><br>
 	  <center>
 	<form action="EditPayments.php?id=<?php echo $_GET['id'];?>" method="post">
-	  <table border="0">
+	  <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		if(!$con)
@@ -86,7 +107,7 @@
 		  </tr>
 		  <tr>
 		  <td>&nbsp;</td>
-			<td><input type="submit" name="btnsubmit" id="btnsubmit" value="Edit" onClick="validateAll()">  <input type="reset" name="btnreset" id="btnreset" value="Reset"></td>
+			<td><input name="btnsubmit" type="submit" class="badge-danger" id="btnsubmit" onClick="validateAll()" value="Update">  <input name="btnreset" type="reset" class="badge-secondary" id="btnreset" value="Reset"></td>
 		  </tr>
 		  <?php
 		}

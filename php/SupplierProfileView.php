@@ -3,15 +3,27 @@
 
 if(!isset($_SESSION["id"]))
 {
-	header('Location:customerLogin.php');
+	header('Location:supplierLogin.php');
 }
 
  ?>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Supplier Profile View</title>
-</head>	
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Supplier Profile View</title>
+	  
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+	  
+  </head>
+
+ <body>
+	 
+
 <body>
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
     <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
@@ -26,9 +38,14 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	<br>
+	  <br>
+	  <br>
+
 	<center><h1>My Profile</h1></center><br>
 
-	 <center><table border="0">
+	<table class="tsble table-striped"align="center" border="1px" style="width:600px; line-height: 40px;">
+		 
 		<?php
 		 $con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		 if(!$con)
@@ -41,28 +58,35 @@ if(!isset($_SESSION["id"]))
 		 {
 			 $row = mysqli_fetch_assoc($result);
 		 ?>
+		 
+		 
 		 <tr>
 		   <td>Company Name</td>
-			 <td> <?php echo $row['supplierCompanyName'];?></td>
+		   <td> <?php echo $row['supplierCompanyName'];?></td>
 		 </tr>
+		 
 		 <tr>
 		   <td>Supplier Name</td>
-			 <td> <?php echo $row['supplierName'];?></td>
-		 </tr>
+		   <td> <?php echo $row['supplierName'];?></td>
+		 </tr> 
+		 
 		 <tr>
 		   <td>Email</td>
-			 <td> <?php echo $row['email'];?></td>
+		   <td> <?php echo $row['email'];?></td>
 		 </tr>
+		 
 		 <tr>
 		   <td>Tele No</td>
-			 <td> <?php echo $row['teleNo'];?></td>
+		   <td> <?php echo $row['teleNo'];?></td>
 		 </tr>
+		 
 		 <a href="SupplierOrderList.php?id=<?php echo $row['supplierId'] ?>">View Orders</a>&nbsp;
 		 <a href="EditSupplierProfile.php?id=<?php echo $row['supplierId'] ?>">Edit Profile</a>
 		 
 		 <?php
 		 }
 		 ?>
+		 
 		</table>
 		 </center>
 	</body>

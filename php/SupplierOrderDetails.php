@@ -78,9 +78,12 @@ if(!isset($_SESSION["id"]))
 	      
     </div>
   </nav>
+	  <br>
+	  <br>
+	  <br>
 	  <center><h1>Order Details</h1></center><br>
 	<center><form action="SupplierOrderDetails.php?id=<?php echo $_GET['id']?>" method="post">
-		<table border="0">
+		<table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
 		<?php
 		$con = mysqli_connect("localhost","root","","jayasiripharmacydb");
 		if(!$con)
@@ -118,11 +121,11 @@ if(!isset($_SESSION["id"]))
 			</tr>
 			<tr>
 			<td>Order Amount</td>
-			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>" onClick="validateAll()"></td>
+			<td><input type="number" id="txtOrderAmount" name="txtOrderAmount" value="<?php echo $row['totalAmount']?>" ></td>
 			</tr>
 			<tr>
 			<td>&nbsp;</td>
-			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update"></td>
+			<td><input type="submit" id="btnUpdate" name="btnUpdate" value="update" onClick="validateAll()"></td>
 			</tr>
 		<?php
 		}

@@ -11,9 +11,30 @@
 </head>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+    <img src="../images/PharmacyLogo.PNG" width="3%" height="3%">
+    <img src="../images/JAYASIRIWord.PNG" width="7%" height="7%">
+	  <img src="../images/PharmacyWord.PNG" width="7%" height="7%">
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	      <ul class="navbar-nav ml-auto">
+			<li class="nav-item"> <a class="nav-link" href="OrderList.php">Customer Orders</a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="Supplier.php">Supplier</a> </li>
+			<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Stocks </a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="ViewStocks.php">View Stocks</a> <a class="dropdown-item" href="StockManagement.php">Add Stocks</a>
+			</li>
+	        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Payments </a>
+	          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="Payments.php">Payments</a> <a class="dropdown-item" href="AddPayments.php">Add Payment</a>
+			  </li>
+          </ul>
+	      
+    </div>
+  </nav>
+	  <br>
+	  <br>
+	  <br>
 <form id="form1" name="form1" method="post">
   <p>&nbsp;</p>
-  <table width="544" height="300" border="0">
+ <table class="table table-striped" align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
 		<?php
         
@@ -86,7 +107,7 @@
         
         <tr>
             <td><label for="textfield">Total Amount : </label>
-            <input type="text" name="orderAmount" id="orderAmount"></td>
+            <input type="text" name="orderAmount" id="orderAmount" required></td>
         </tr>
         <?php
         
@@ -124,14 +145,14 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <table width="955" border="0">
+  <table align="center" border="1px" style="width:600px; line-height: 40px;">
     <tbody>
       <tr>
         <td width="247"><input type="submit" name="confirm"
-                class="button" value="Confirm" /></td>
+                class="badge-success" value="Confirm" /></td>
         <td width="247"><input type="submit" name="reject"
-                class="button" value="Reject" /></td>
-        <td width="244"><input type="button" name="button3" id="button3" value="Back"></td>
+                class="badge-danger" value="Reject" /></td>
+        <td width="244"><input name="button3" type="button" class="badge-secondary" id="button3" value="Back"></td>
       </tr>
     </tbody>
   </table>
